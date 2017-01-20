@@ -1,0 +1,12 @@
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  max-width: 650px;
+  text-align: center;
+  margin: auto auto;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

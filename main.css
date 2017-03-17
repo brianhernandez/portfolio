@@ -1,6 +1,13 @@
-/******************
-    VARIABLES
-******************/
+/* VARIABLES
+  ================================ */
+/* COLORS */
+/* BREAKPOINTS */
+/* THE FOUNDATION
+  ================================ */
+* {
+  box-sizing: border-box;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -73,7 +80,44 @@ img {
   border: 0;
 }
 
-/* Global
+/* TYPOGRAPHY
+  ================================ */
+/* MAIN NAV
+  ================================ */
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: -400px;
+  width: 200px;
+  height: 100%;
+  background: #444;
+  text-align: center;
+  transform: translate3d(0);
+  transition: transform 1.3s;
+}
+
+/* OFF CANVAS MENU
+  ================================ */
+#offcanvas-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+#offcanvas-toggle:checked ~ .wrapper .main-nav {
+  transform: translate3d(200px, 0, 0);
+  transition: transform .3s;
+}
+
+.wrapper {
+  transform: translate3d(0);
+  transition: transform .8s;
+}
+
+#offcanvas-toggle:checked ~ .wrapper {
+  transform: translate3d(200px, 0, 0);
+}
+
+/* THE GRID
 ================================ */
 .grid-container {
   padding-left: 10px;
@@ -82,13 +126,8 @@ img {
   margin-right: auto;
 }
 
-img {
-  width: 100%;
-}
-
-/* Media Queries
-================================ */
-@media (min-width: 1px) and (max-width: 767px) {
+/* THE GRID - Media Queries */
+@media (min-width: 1px) and (max-width: 360px) {
   .grid-container > [class^="grid-"] {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -98,15 +137,15 @@ img {
     display: none;
   }
 }
-@media (min-width: 768px) {
-  /* Columns
-  ================================ */
+@media (min-width: 601px) {
+  /* THE GRID - Columns */
   .grid-container > [class^="grid-"] {
     float: left;
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 2%;
+    max-width: 960px;
   }
 
   .grid-container > [class^="grid-"]:first-child {
@@ -117,8 +156,7 @@ img {
     float: right;
   }
 
-  /* Columns are 65px wide, with 20px gutters
-  =========================================== */
+  /* THE GRID - Columns are 65px wide, with 20px gutters */
   .grid-1 {
     width: 6.5%;
   }
@@ -167,8 +205,7 @@ img {
     width: 100%;
   }
 
-  /* Clearfix
-  ================================ */
+  /* THE GRID - Clearfix */
   .grid-container:after,
   .group:after {
     content: " ";
@@ -176,8 +213,8 @@ img {
     clear: both;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   .grid-container {
-    max-width: 1100px;
+    max-width: 1025px;
   }
 }

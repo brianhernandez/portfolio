@@ -4,6 +4,7 @@
 .nav-bar {
   background: $small-bg-color;
   padding: 1em;
+  box-shadow: 0px 2px 4px 0px rgba(140,140,140,1);
 
   @media screen and (min-width: $medium) {
     background: $medium-bg-color;
@@ -18,19 +19,39 @@
   }
 }
 
+.nav-bar .su_container {
+  text-align: center;
+}
+
 .main-nav {
   position: fixed;
+  display: inline-block;
   top: 0;
   // left: -400px;
   // width: 200px;
-  left: -14em;
-  width: 7em;
+  left: -16em;
+  width: 8em;
   height: 100%;
   // margin-right: .7em;
   background: $offcanvas-bg;
   text-align: center;
   transform: translate3d(0);
   transition: transform 1.3s;
+  box-shadow: 2px 0px 4px 0px rgba(140,140,140,1);
+
+  @media screen and (min-width: $large) {
+    position: initial;
+    display: inline;
+    background: inherit;
+    box-shadow: none;
+  }
+}
+
+.main-nav li {
+
+  @media screen and (min-width: $large) {
+    display: inline-block;
+  }
 }
 
 .main-nav li a {
@@ -38,17 +59,28 @@
   padding: 1em;
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 1.2em;
+
+  @media screen and (min-width: $large) {
+    display: inline-block;
+  }
 }
 
 .main-nav li a:hover,
 .main-nav li a:focus {
   background: $small-bg-color;
+
+  @media screen and (min-width: $medium) {
+    // background-color: ligh­ten­($medium-bg-color, 50%);
+  }
+
+  @media screen and (min-width: $large) {
+    // background-color: ligh­ten­($large-bg-color, 50%);
+    background: #fff;
+  }
+
 }
 
-@media screen and (min-width: $medium) {
 
-}
 
 /* OFF CANVAS MENU
   ================================ */
@@ -58,7 +90,12 @@
   opacity: 0;
 }
 
-@media screen and (min-width: $medium) {
+#offcanvas-toggle-label i {
+  float: left;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: $large) {
   #offcanvas-toggle-label {
     position: absolute;
     opacity: 0;
@@ -67,7 +104,7 @@
 
 #offcanvas-toggle:checked ~ .wrapper .main-nav {
   // transform: translate3d(200px, 0, 0);
-  transform: translate3d(7em, 0, 0);
+  transform: translate3d(8em, 0, 0);
   transition: transform .3s;
 }
 
@@ -78,21 +115,31 @@
 
 #offcanvas-toggle:checked ~ .wrapper {
   // transform: translate3d(200px, 0, 0);
-  transform: translate3d(7em, 0, 0);
+  transform: translate3d(8em, 0, 0);
   // transition: transform .5s;
 }
 
 /* LOGO
   ================================ */
 
+.brand {
+  float: left;
+  display: inline-block;
+}
+
 .site-logo {
   position: fixed;
-  top: 14em;
+  top: 15em;
   left: -14em;
   max-width: 3em;
   z-index: 2;
   transform: translate3d(0);
   transition: transform 1.3s;
+
+  @media screen and (min-width: $large) {
+    position: initial;
+    max-width: 2em;
+  }
 }
 
 #offcanvas-toggle:checked ~ .wrapper .site-logo {
@@ -100,6 +147,74 @@
   transition: transform .3s;
 }
 
+.site-name {
+  display: none;
+  margin-left: 2em;
+  line-height: 3em;
+  vertical-align: top;
+
+  @media screen and (min-width: 811px) {
+    display: inline-block;
+  }
+}
+
 /* SEARCH
   ================================ */
+
+.site-search {
+  float: right;
+  position: relative
+}
+
+.search-input {
+  padding: 5px 10px;
+  appearance: none;
+  border: none;
+  font-size: inherit;
+  background: inherit;
+  text-align: center;
+  // border: 1px solid red;
+  // background-image: linear-gradient(to right, rgba(58,207,213,.7) 0%, rgba(58,78,213, 0.7) 100%), linear-gradient(to right, rgba(58,207,213, 0.7) 0%, rgba(58,78,213, 0.7) 100%)
+
+  @media screen and (min-width: $large) {
+    padding: 10px;
+  }
+}
+
+.search-label {
+  position: absolute;
+  bottom: .4em;
+  left: .5em;
+  transform: translate3d(0,0,0);
+  transition: transform .3s ease;
+
+  @media screen and (min-width: $large) {
+    bottom: .6em;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  color: #000;
+  // font-size: 1.2em;
+  right: .5em;
+  bottom: .05em;
+  pointer-events: none;
+
+  @media screen and (min-width: $large) {
+    bottom: .2em;
+  }
+}
+
+.search-input:focus {
+  background: #fff;
+  outline-bottom: 0;
+  transition: background .3s ease, outline-bottom .3s ease;
+}
+
+.search-input:focus + .search-label {
+  transform: translate3d(0, 2em, 0);
+  color: #fff;
+  transition: transform .3s ease, color .3s ease;
+}
 

@@ -158,10 +158,16 @@ $su_11of12: percentage(11/12);
   /* End columns count */
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: $large) {
   .su_container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $huge) {
+  .su_container {
+    max-width: 1025px;
   }
 }
 

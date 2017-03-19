@@ -18,3 +18,14 @@ $huge: 1025px;
 //   'large': (min-width: 601px),
 //   'huge': (min-width: 1025px),
 // );
+
+
+/* OTHER */
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}

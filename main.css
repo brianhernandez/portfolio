@@ -2,9 +2,19 @@
   ================================ */
 /* COLORS */
 /* BREAKPOINTS */
+/* OTHER */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 /* THE FOUNDATION
   ================================ */
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 * {
   box-sizing: border-box;
 }
@@ -96,6 +106,7 @@ ol {
 .nav-bar {
   background: #38C3FF;
   padding: 1em;
+  box-shadow: 0px 2px 4px 0px #8c8c8c;
 }
 @media screen and (min-width: 361px) {
   .nav-bar {
@@ -113,16 +124,36 @@ ol {
   }
 }
 
+.nav-bar .su_container {
+  text-align: center;
+}
+
 .main-nav {
   position: fixed;
+  display: inline-block;
   top: 0;
-  left: -14em;
-  width: 7em;
+  left: -16em;
+  width: 8em;
   height: 100%;
   background: #fff;
   text-align: center;
   transform: translate3d(0);
   transition: transform 1.3s;
+  box-shadow: 2px 0px 4px 0px #8c8c8c;
+}
+@media screen and (min-width: 601px) {
+  .main-nav {
+    position: initial;
+    display: inline;
+    background: inherit;
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .main-nav li {
+    display: inline-block;
+  }
 }
 
 .main-nav li a {
@@ -130,12 +161,22 @@ ol {
   padding: 1em;
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 1.2em;
+}
+@media screen and (min-width: 601px) {
+  .main-nav li a {
+    display: inline-block;
+  }
 }
 
 .main-nav li a:hover,
 .main-nav li a:focus {
   background: #38C3FF;
+}
+@media screen and (min-width: 601px) {
+  .main-nav li a:hover,
+  .main-nav li a:focus {
+    background: #fff;
+  }
 }
 
 /* OFF CANVAS MENU
@@ -145,14 +186,19 @@ ol {
   opacity: 0;
 }
 
-@media screen and (min-width: 361px) {
+#offcanvas-toggle-label i {
+  float: left;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 601px) {
   #offcanvas-toggle-label {
     position: absolute;
     opacity: 0;
   }
 }
 #offcanvas-toggle:checked ~ .wrapper .main-nav {
-  transform: translate3d(7em, 0, 0);
+  transform: translate3d(8em, 0, 0);
   transition: transform .3s;
 }
 
@@ -162,19 +208,30 @@ ol {
 }
 
 #offcanvas-toggle:checked ~ .wrapper {
-  transform: translate3d(7em, 0, 0);
+  transform: translate3d(8em, 0, 0);
 }
 
 /* LOGO
   ================================ */
+.brand {
+  float: left;
+  display: inline-block;
+}
+
 .site-logo {
   position: fixed;
-  top: 14em;
+  top: 15em;
   left: -14em;
   max-width: 3em;
   z-index: 2;
   transform: translate3d(0);
   transition: transform 1.3s;
+}
+@media screen and (min-width: 601px) {
+  .site-logo {
+    position: initial;
+    max-width: 2em;
+  }
 }
 
 #offcanvas-toggle:checked ~ .wrapper .site-logo {
@@ -182,13 +239,85 @@ ol {
   transition: transform .3s;
 }
 
+.site-name {
+  display: none;
+  margin-left: 2em;
+  line-height: 3em;
+  vertical-align: top;
+}
+@media screen and (min-width: 811px) {
+  .site-name {
+    display: inline-block;
+  }
+}
+
 /* SEARCH
   ================================ */
+.site-search {
+  float: right;
+  position: relative;
+}
+
+.search-input {
+  padding: 5px 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-size: inherit;
+  background: inherit;
+  text-align: center;
+}
+@media screen and (min-width: 601px) {
+  .search-input {
+    padding: 10px;
+  }
+}
+
+.search-label {
+  position: absolute;
+  bottom: .4em;
+  left: .5em;
+  transform: translate3d(0, 0, 0);
+  transition: transform .3s ease;
+}
+@media screen and (min-width: 601px) {
+  .search-label {
+    bottom: .6em;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  color: #000;
+  right: .5em;
+  bottom: .05em;
+  pointer-events: none;
+}
+@media screen and (min-width: 601px) {
+  .search-icon {
+    bottom: .2em;
+  }
+}
+
+.search-input:focus {
+  background: #fff;
+  outline-bottom: 0;
+  transition: background .3s ease, outline-bottom .3s ease;
+}
+
+.search-input:focus + .search-label {
+  transform: translate3d(0, 2em, 0);
+  color: #fff;
+  transition: transform .3s ease, color .3s ease;
+}
+
 /* FOOTER
   ================================ */
 .main-footer {
   background: #38C3FF;
   padding: 1em;
+  box-shadow: 0px -2px 4px 0px #8c8c8c;
 }
 @media screen and (min-width: 361px) {
   .main-footer {
@@ -374,10 +503,15 @@ ol {
 
   /* End columns count */
 }
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 601px) {
   .su_container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .su_container {
+    max-width: 1025px;
   }
 }
 .su_demo_hackhaton {

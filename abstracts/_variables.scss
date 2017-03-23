@@ -3,10 +3,20 @@
 
 /* COLORS */
 $offcanvas-bg: #fff;
-$small-bg-color: #38C3FF;
-$medium-bg-color: #7AEC1E;
-$large-bg-color: #ADADAD;
-$huge-bg-color: #FF3B2E;
+$small-bg-color: linear-gradient(135deg, rgba(47,162,212,1) 0%, rgba(56,195,255,1) 100%);
+$medium-bg-color: linear-gradient(135deg, rgba(102,194,27,1) 0%, rgba(122,236,30,1) 100%);
+$large-bg-color: linear-gradient(135deg, rgba(145,143,145,1) 0%, rgba(173,173,173,1) 100%);
+$huge-bg-color: linear-gradient(135deg, rgba(201,51,43,1) 0%, rgba(255,60,46,1) 100%);
+
+$small-nav-color: #38C3FF;
+$medium-nav-color: #7AEC1E;
+$large-nav-color: #ADADAD;
+$huge-nav-color: #FF3B2E;
+
+//  blue #38C3FF;
+// green #7AEC1E;
+// gray #ADADAD;
+// red #FF3B2E;
 
 /* BREAKPOINTS */
 $medium: 361px;

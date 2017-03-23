@@ -1,7 +1,5 @@
-/*
-* GRID COMPONENT
-* AUTHORED BY LENA FAURE
-*/
+/* GRID (AUTHORED BY LENA FAURE)
+  ================================ */
 
 $su_gutter: 1em;
 $su_1of12: percentage(1/12);
@@ -158,17 +156,16 @@ $su_11of12: percentage(11/12);
   /* End columns count */
 }
 
-@media screen and (min-width: $large) {
-  .su_container {
+.su_container {
+
+  @media screen and (min-width: $large) {
     max-width: 960px;
     margin: 0 auto;
   }
-}
-
-@media screen and (min-width: $huge) {
-  .su_container {
+  @media screen and (min-width: $huge) {
     max-width: 1025px;
   }
+
 }
 
 .su_demo_hackhaton {

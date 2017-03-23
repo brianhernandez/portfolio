@@ -57,7 +57,7 @@
 .main-nav li a {
   display: block;
   padding: 1em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 700;
 
   @media screen and (min-width: $large) {
@@ -67,10 +67,10 @@
 
 .main-nav li a:hover,
 .main-nav li a:focus {
-  background: $small-bg-color;
+  background: $small-nav-color;
 
   @media screen and (min-width: $medium) {
-    // background-color: ligh­ten­($medium-bg-color, 50%);
+    background: $medium-nav-color;
   }
 
   @media screen and (min-width: $large) {
@@ -152,10 +152,20 @@
   margin-left: 2em;
   line-height: 3em;
   vertical-align: top;
+  // color: #000;
+  transition: color .3s ease;
 
-  @media screen and (min-width: 811px) {
+  @media screen and (min-width: 866px) {
     display: inline-block;
   }
+
+  @media screen and (max-width: 600px) and (min-width: 420px) {
+    display: inline-block;
+  }
+}
+
+h1.site-name:hover {
+  color: #fff;
 }
 
 /* SEARCH
@@ -173,6 +183,8 @@
   font-size: inherit;
   background: inherit;
   text-align: center;
+  border-bottom: 1px solid #000;
+  transition: background .3s ease, border-bottom .3s ease;
   // border: 1px solid red;
   // background-image: linear-gradient(to right, rgba(58,207,213,.7) 0%, rgba(58,78,213, 0.7) 100%), linear-gradient(to right, rgba(58,207,213, 0.7) 0%, rgba(58,78,213, 0.7) 100%)
 
@@ -195,11 +207,13 @@
 
 .search-icon {
   position: absolute;
-  color: #000;
+  // color: #000;
   // font-size: 1.2em;
   right: .5em;
   bottom: .05em;
   pointer-events: none;
+  opacity: 1;
+  transition: opacity .3s ease;
 
   @media screen and (min-width: $large) {
     bottom: .2em;
@@ -208,13 +222,22 @@
 
 .search-input:focus {
   background: #fff;
-  outline-bottom: 0;
-  transition: background .3s ease, outline-bottom .3s ease;
+  border-color: #fff;
+  transition: background .3s ease, border-bottom .3s ease, ;
 }
 
 .search-input:focus + .search-label {
-  transform: translate3d(0, 2em, 0);
+  transform: translate3d(0, 1.7em, 0);
   color: #fff;
   transition: transform .3s ease, color .3s ease;
+
+  @media screen and (min-width: $large) {
+    transform: translate3d(0, 2em, 0);
+  }
+
+}
+
+.search-input:focus ~ .search-icon {
+  opacity: 0;
 }
 

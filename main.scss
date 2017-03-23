@@ -3,7 +3,13 @@
 @import 'base/foundation';
 @import 'base/typography';
 
+@import 'components/accordiontabs';
 @import 'components/navigation';
 
+@import 'layout/about';
+@import 'layout/contact';
 @import 'layout/footer';
 @import 'layout/grid';
+@import 'layout/main-content';
+@import 'layout/projects';
+@import 'layout/skills';

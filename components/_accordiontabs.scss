@@ -90,12 +90,12 @@
 
   @media screen and (min-width: $large) {
     opacity: 1;
-    background: lighten($large-nav-color,3%);
+    background: lighten($large-nav-color,15%);
     max-height: initial;
 
   }
   @media screen and (min-width: $huge) {
-    background: lighten($huge-nav-color,3%);
+    background: lighten($huge-nav-color,15%);
   }
 }
 
@@ -140,3 +140,4 @@
     transition: background .3s ease;
   }
 }
+

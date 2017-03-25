@@ -31,8 +31,17 @@
               <input class="search-input" id="search" type="search" placeholder="">
               <label class="search-label" for="search">Search</label>
               <i class="material-icons search-icon">search</i>
+              <a href="#modal"><i class="material-icons search-icon">search</i></a>
             </div>
           </div>
+
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <a href="#" class="close-icon"><i class="material-icons">close</i></a>
+              <p>Something here</p>
+            </div>
+          </div>
+
         </nav>
     </header>
     <main class="main-content">
@@ -55,22 +64,48 @@
                 <div class="su_bellow">
                   <input id="bellow1" type="radio" name="bellows">
                   <label for="bellow1" class="su_radius">Bellow One</label>
-                  <div class="su_bellow-content su_background-bg">
-                    <p>SHE GOT LOVE FOR ME <code class="su_code">su_background-bg</code> on it giving the content it's background color. Sequi tempora aperiam, itaque maiores laudantium earum delectus! Laboriosam rerum eius sed, corporis illum, nostrum qui provident ad, enim dolorum, quod quia!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora aperiam, itaque maiores laudantium earum delectus! Laboriosam rerum eius sed, corporis illum, nostrum qui provident ad, enim dolorum, quod quia!</p>
+                  <div class="su_bellow-content">
+
+                    <div class="carousel">
+                      <input type="radio" name="project-1" id="proj-1-slide-1">
+                      <input type="radio" name="project-1" id="proj-1-slide-2">
+                      <input type="radio" name="project-1" id="proj-1-slide-3">
+                      <div class="proj-1-slide-1">
+                        <label class="carousel-nav" for="proj-1-slide-3"><i class="material-icons">skip_previous</i></label>
+                          <div class="slide-content">
+                          <p>Slide 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis asperiores magnam molestias nobis vel iusto quibusdam veritatis facere cumque consequatur. Rem voluptates voluptatum cum nihil rerum, delectus enim aliquid maxime?</p>
+                          </div>
+                        <label class="carousel-nav" for="proj-1-slide-2"><i class="material-icons">skip_next</i></label>
+                      </div>
+                      <div class="proj-1-slide-2">
+                        <label class="carousel-nav" for="proj-1-slide-1"><i class="material-icons">skip_previous</i></label>
+                          <div class="slide-content">
+                          <p> Slide 2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nam ducimus, quia soluta nisi repudiandae esse quidem iure doloremque quasi velit excepturi, blanditiis ut odit totam, aliquid placeat error deleniti!</p>
+                          </div>
+                        <label class="carousel-nav" for="proj-1-slide-3"><i class="material-icons">skip_next</i></label>
+                      </div>
+                      <div class="proj-1-slide-3">
+                        <label class="carousel-nav" for="proj-1-slide-2"><i class="material-icons">skip_previous</i></label>
+                          <div class="slide-content">
+                          <p>Slide 3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores totam voluptas deserunt doloremque, modi, officiis ut explicabo vel. Hic dolores omnis debitis accusamus quae nihil earum aliquid, vero autem quos.</p>
+                          </div>
+                        <label class="carousel-nav" for="proj-1-slide-1"><i class="material-icons">skip_next</i></label>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
                 <div class="su_bellow">
                   <input id="bellow2" type="radio" name="bellows">
-                  <label for="bellow2" class="su_radius">Bellow Two</label>
-                  <div class="su_bellow-content su_background-bg">
+                  <label for="bellow2" class="">Bellow Two</label>
+                  <div class="su_bellow-content">
                     <p>This bellow has a class of <code class="su_code">su_background-bg</code> on it giving the content it's background color. Laboriosam rerum eius sed, corporis illum, nostrum qui provident ad, enim dolorum, quod quia!</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora aperiam, itaque maiores laudantium earum delectus! Laboriosam rerum eius sed, corporis illum, nostrum qui provident ad, enim dolorum, quod quia!</p>
                   </div>
                 </div>
                 <div class="su_bellow">
                   <input id="bellow3" type="radio" name="bellows">
-                  <label for="bellow3" class="su_radius">Bellow Three</label>
+                  <label for="bellow3" class="">Bellow Three</label>
                   <div class="su_bellow-content">
                     <p>This bellow has a class of <code class="su_code">su_radius</code> on its label giving the bellow its curved corners.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora aperiam, itaque maiores laudantium earum delectus! Laboriosam rerum eius sed, corporis illum, nostrum qui provident ad, enim dolorum, quod quia!</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora aperiam, itaque maiores laudantium earum delectus! Laboriosam rerum eius sed, corporis illum, nostrum qui provident ad, enim dolorum, quod quia!</p>
@@ -108,6 +143,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam aliquam molestiae expedita, explicabo tenetur vitae ad nisi autem doloribus suscipit ullam velit quidem dolores nostrum sunt nulla esse dicta.</p>
         </div>
     </footer>
+
+
+
   </div>
   <script src="accordiontabs.js"></script>
   <!-- <script src="//localhost:35729/livereload.js"></script> -->

@@ -213,13 +213,13 @@ h2 {
 @media screen and (min-width: 601px) {
   .su_bellow input:checked ~ .su_bellow-content {
     opacity: 1;
-    background: #b5b5b5;
+    background: lightgray;
     max-height: initial;
   }
 }
 @media screen and (min-width: 1025px) {
   .su_bellow input:checked ~ .su_bellow-content {
-    background: #ff493d;
+    background: #ff837b;
   }
 }
 
@@ -263,6 +263,120 @@ h2 {
     background-color: #ff837b;
     transition: background .3s ease;
   }
+}
+
+/* CAROUSEL
+  ================================ */
+.carousel {
+  position: relative;
+}
+
+.proj-1-slide-1,
+.proj-2-slide-1 {
+  position: relative;
+  opacity: 1;
+}
+
+.proj-1-slide-2,
+.proj-1-slide-3 {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+#proj-1-slide-1:checked ~ .proj-1-slide-1,
+#proj-1-slide-2:checked ~ .proj-1-slide-2,
+#proj-1-slide-3:checked ~ .proj-1-slide-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+#proj-1-slide-2:checked ~ .proj-1-slide-1,
+#proj-1-slide-2:checked ~ .proj-1-slide-3,
+#proj-1-slide-3:checked ~ .proj-1-slide-1,
+#proj-1-slide-3:checked ~ .proj-1-slide-2,
+#proj-1-slide-1:checked ~ .proj-1-slide-2,
+#proj-1-slide-1:checked ~ .proj-1-slide-3 {
+  opacity: 0;
+  position: absolute;
+}
+
+.carousel .carousel-nav {
+  display: inline-block;
+  background: initial;
+  box-shadow: none;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+.slide-content {
+  display: inline-block;
+  max-width: 75%;
+}
+
+.carousel .carousel-nav:hover,
+.carousel .carousel-nav:focus {
+  color: red;
+  background-color: initial;
+}
+
+/* MODAL
+  ================================ */
+.modal-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all .3s ease;
+}
+
+.modal-container:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  width: 15em;
+  height: 10em;
+  margin: auto;
+  color: #fff;
+  position: absolute;
+  opacity: 0;
+  padding: 10px;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0.1, 0.1, 1);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 4px 0px white;
+  transition: all .6s ease;
+}
+
+.modal-container:target > .modal {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+
+.close-icon {
+  position: absolute;
+  padding: 5px;
+  top: -25px;
+  right: -25px;
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* MAIN NAV

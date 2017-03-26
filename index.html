@@ -25,20 +25,21 @@
               <a href="index.html"><h1 class="site-name">Brian Hernandez</h1></a>
             </div>
             <ul class="main-nav">
-              <li><a href="#">About</a></li><li><a href="#">Projects</a></li><li><a href="#">Skills</a></li><li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
             </ul>
             <div class="site-search">
               <input class="search-input" id="search" type="search" placeholder="">
               <label class="search-label" for="search">Search</label>
-              <i class="material-icons search-icon">search</i>
-              <a href="#modal"><i class="material-icons search-icon">search</i></a>
+              <!-- <i class="material-icons search-icon">search</i> -->
+              <a href="#modal" class="search-icon"><i class="material-icons">search</i></a>
             </div>
           </div>
 
           <div class="modal-container" id="modal">
             <div class="modal">
               <a href="#" class="close-icon"><i class="material-icons">close</i></a>
-              <p>Something here</p>
+              <h4>Search Not Yet Enabled</h4>
+              <p class="modal-content"></p>
             </div>
           </div>
 
@@ -46,12 +47,12 @@
     </header>
     <main class="main-content">
 
-      <section class="su_container content-about">
+      <section class="su_container content-about" id="about">
         <h2>About Brian</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime quod vero voluptate, voluptatibus quia, et officia laboriosam pariatur a eius, adipisci doloribus nobis magnam quaerat sed saepe ex quidem!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime quod vero voluptate, voluptatibus quia, et officia laboriosam pariatur a eius, adipisci doloribus nobis magnam quaerat sed saepe ex quidem!</p>
       </section>
-      <section class="su_container content-projects">
+      <section class="su_container content-projects" id="projects">
         <h2>Projects</h2>
           <div class="su_line">
             <div class="su_cell su_cells_4 tabs-label">
@@ -125,12 +126,73 @@
               </div>
             </div>
       </section>
-      <section class="su_container content-skills">
+      <section class="su_container content-skills" id="skills">
         <h2>Skills</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime quod vero voluptate, voluptatibus quia, et officia laboriosam pariatur a eius, adipisci doloribus nobis magnam quaerat sed saepe ex quidem!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime quod vero voluptate, voluptatibus quia, et officia laboriosam pariatur a eius, adipisci doloribus nobis magnam quaerat sed saepe ex quidem!</p>
+        <div class="su_line">
+          <div class="su_cell">
+            <div class="total-bar frontend-bar"><span>70%</span></div><div class="total-bar backend-bar"><span>30%</span></div>
+          </div>
+        </div>
+        <div class="graphs-container su_line">
+          <div class="frontend-graph-container su_cell su_cells_6">
+            <h3>Frontend Development</h3>
+            <div class="frontend-graph">
+              <ul class="y-axis">
+                <li class="y-li">Expert</li>
+                <li class="y-li">Proficient</li>
+                <li class="y-li">Competent</li>
+                <li class="y-li">Learning</li>
+              </ul>
+              <ul class="bars">
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre"></li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre"></li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+              </ul>
+            </div>
+          </div>
+          <div class="backend-graph-container su_cell su_cells_6">
+            <h3>Backend Development</h3>
+            <div class="backend-graph">
+              <ul class="y-axis">
+                <li class="y-li">Expert</li>
+                <li class="y-li">Proficient</li>
+                <li class="y-li">Competent</li>
+                <li class="y-li">Learning</li>
+              </ul>
+              <ul class="bars">
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre"></li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre"></li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="su_line">
+          <div class="graphs-container other-skills-graph-container su_cell">
+            <h3>Other Skills</h3>
+            <div class="other-graph">
+              <ul class="y-axis">
+                <li class="y-li">Expert</li>
+                <li class="y-li">Proficient</li>
+                <li class="y-li">Competent</li>
+                <li class="y-li">Learning</li>
+              </ul>
+              <ul class="bars">
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+                <li class="bar-li" data-tooltip="Something HEre">example</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="su_container content-contact">
+      <section class="su_container content-contact" id="contact">
         <h2>Contact</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime quod vero voluptate, voluptatibus quia, et officia laboriosam pariatur a eius, adipisci doloribus nobis magnam quaerat sed saepe ex quidem!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maxime quod vero voluptate, voluptatibus quia, et officia laboriosam pariatur a eius, adipisci doloribus nobis magnam quaerat sed saepe ex quidem!</p>

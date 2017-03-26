@@ -5,6 +5,10 @@
   background: $small-bg-color;
   padding: 1em;
   box-shadow: 0px 2px 4px 0px rgba(140,140,140,1);
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
 
   @media screen and (min-width: $medium) {
     background: $medium-bg-color;
@@ -79,8 +83,6 @@
   }
 
 }
-
-
 
 /* OFF CANVAS MENU
   ================================ */
@@ -173,7 +175,19 @@ h1.site-name:hover {
 
 .site-search {
   float: right;
-  position: relative
+  position: relative;
+
+  @media screen and (min-width: $large) and (max-width: 686px) {
+    display: inline-block;
+    float: initial;
+    top: -.5em;
+    margin: auto;
+  }
+  @media screen and (min-width: 687px) {
+    float: right;
+    top: initial;
+    margin: initial;
+  }
 }
 
 .search-input {
@@ -211,14 +225,16 @@ h1.site-name:hover {
   // font-size: 1.2em;
   right: .5em;
   bottom: .05em;
-  pointer-events: none;
-  opacity: 1;
-  transition: opacity .3s ease;
+  // pointer-events: none;
+  transition: transform .3s ease, color .3s ease;
+
 
   @media screen and (min-width: $large) {
     bottom: .2em;
   }
 }
+
+
 
 .search-input:focus {
   background: #fff;
@@ -238,6 +254,11 @@ h1.site-name:hover {
 }
 
 .search-input:focus ~ .search-icon {
-  opacity: 0;
+  color: #fff;
+  transform: translate3d(0, 1.7em, 0);
+
+  @media screen and (min-width: $large) {
+    transform: translate3d(0, 2em, 0);
+  }
 }
 

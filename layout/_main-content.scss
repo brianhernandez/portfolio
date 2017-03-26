@@ -4,3 +4,10 @@
 .main-content {
   padding: 1em;
 }
+
+.content-about,
+.content-projects,
+.content-skills,
+.content-contact {
+  min-height: 40em;
+}

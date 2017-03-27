@@ -58,6 +58,7 @@
 
 .other-graph {
   margin: auto;
+
 }
 
 .y-axis {
@@ -71,6 +72,7 @@
   margin-bottom: 3em;
   font-size: .8em;
   font-weight: 700;
+  text-align: right;
 }
 
 .y-axis .y-li:last-child {
@@ -79,15 +81,75 @@
 }
 
 .bars {
-  display: inline-block;
+  display: inline;
   margin-left: 3em;
+  position: relative;
+  bottom: -4px;
   // float: right;
+
+  @media screen and (min-width: $large) and (max-width: 833px) {
+    // margin-left: 1em;
+  }
 }
 
 .bar-li {
   display: inline-block;
-  background: #139FFD;
-  width: 10%;
-  height: 80%;
+  width: 9%;
+  height: 100px;
+  list-style: none;
+  position: relative;
+  margin-right: .5em;
+  box-shadow: 2px -2px 4px 0px rgba(140,140,140,1);
   // padding: 0;
+
+  @media screen and (min-width: $large) and (max-width: 786px) {
+    width: 6%;
+    margin-right: .3em;
+  }
+}
+
+.bar-li:nth-child(1) {
+  background: $red;
+}
+
+.bar-li:nth-child(2) {
+  background: $orange;
+}
+
+.bar-li:nth-child(3) {
+  background: $yellow;
+}
+
+.bar-li:nth-child(4) {
+  background: $green;
+}
+
+.bar-li:nth-child(5) {
+  background: $blue;
+}
+
+.x-axis {
+  display: inline-block;
+  margin-left: 9em;
+  margin-top: 1em;
+}
+
+.other-skills-graph-container .x-axis {
+  margin-left: 0em;
+
+  @media screen and (min-width: $large) {
+      margin-left: 20em;
+  }
+}
+
+.x-li {
+  display: inline-block;
+  transform: rotate(45deg);
+  font-size: .5em;
+  // padding-right: 1em;
+  // position: absolute;
+}
+
+.backend-graph-container .x-li {
+  padding-right: 2em;
 }

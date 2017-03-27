@@ -2,6 +2,7 @@
   ================================ */
 /* COLORS */
 /* BREAKPOINTS */
+/* BARGRAPH COLORS */
 /* OTHER */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 .clearfix:after {
@@ -356,6 +357,7 @@ h4 {
   margin-bottom: 3em;
   font-size: .8em;
   font-weight: 700;
+  text-align: right;
 }
 
 .y-axis .y-li:last-child {
@@ -363,15 +365,71 @@ h4 {
 }
 
 .bars {
-  display: inline-block;
+  display: inline;
   margin-left: 3em;
+  position: relative;
+  bottom: -4px;
 }
 
 .bar-li {
   display: inline-block;
-  background: #139FFD;
-  width: 10%;
-  height: 80%;
+  width: 9%;
+  height: 100px;
+  list-style: none;
+  position: relative;
+  margin-right: .5em;
+  box-shadow: 2px -2px 4px 0px #8c8c8c;
+}
+@media screen and (min-width: 601px) and (max-width: 786px) {
+  .bar-li {
+    width: 6%;
+    margin-right: .3em;
+  }
+}
+
+.bar-li:nth-child(1) {
+  background: #ee4035;
+}
+
+.bar-li:nth-child(2) {
+  background: #f37736;
+}
+
+.bar-li:nth-child(3) {
+  background: #fdf498;
+}
+
+.bar-li:nth-child(4) {
+  background: #7bc043;
+}
+
+.bar-li:nth-child(5) {
+  background: #0392cf;
+}
+
+.x-axis {
+  display: inline-block;
+  margin-left: 9em;
+  margin-top: 1em;
+}
+
+.other-skills-graph-container .x-axis {
+  margin-left: 0em;
+}
+@media screen and (min-width: 601px) {
+  .other-skills-graph-container .x-axis {
+    margin-left: 20em;
+  }
+}
+
+.x-li {
+  display: inline-block;
+  transform: rotate(45deg);
+  font-size: .5em;
+}
+
+.backend-graph-container .x-li {
+  padding-right: 2em;
 }
 
 /* CAROUSEL

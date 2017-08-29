@@ -130,7 +130,8 @@
 }
 
 .tabs-label label:hover,
-.tabs-label label:focus {
+.tabs-label label:focus,
+.tabs-label .su_active-tab-flag {
   @media screen and (min-width: $large) {
     background-color: lighten($large-nav-color,15%);
     transition: background .3s ease;

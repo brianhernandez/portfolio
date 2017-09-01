@@ -1,13 +1,17 @@
 (function() {
   // Get element with .main-nav class and save it to menu variable
-  var menu = document.querySelector('.main-nav');
+  var serachBox = document.querySelector('#search');
   // Ensure menu exists and add a click event listener to it
-  menu && menu.addEventListener('click', function(event) {
+  console.log(serachBox);
+  serachBox && serachBox.addEventListener('keydown', function(event) {
+    console.log("Enter key pressed within searchbox.");
+    var code = (event.keyCode ? event.keyCode : event.which);
     // If the element that triggered the click is an A tag element...
-    if (event.target.tagName == "A") {
+    console.log(code);
+    if (code == 13) {
       // Find the element with the #offcanvas-toggle id and set its checked
       // state to false to move the mobile menu back to its offcanvas state
-      document.querySelector('#offcanvas-toggle').checked = false;
+      document.querySelector('#searchbox-link').click();
     }
   });
 })();

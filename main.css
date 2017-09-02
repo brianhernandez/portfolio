@@ -289,6 +289,122 @@ h4 {
   }
 }
 
+.evo_c-accordion {
+  padding-left: 0;
+  margin-left: 0;
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.evo_c-accordion__bellow {
+  box-shadow: 0px -2px 4px 0px #8c8c8c;
+}
+
+.evo_c-accordion__bellow:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 601px) {
+  .evo_c-accordion__bellow {
+    max-width: 350px;
+    margin-bottom: .5em;
+    box-shadow: -2px 2px 4px 0px #8c8c8c;
+  }
+
+  .evo_c-accordion__content {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    padding-bottom: .625em;
+    min-width: 500px;
+    min-height: 500px;
+    box-shadow: 2px 2px 4px 0px #8c8c8c;
+  }
+}
+.evo_c-accordion__title {
+  /*width: 100%;*/
+  padding: .9375em;
+  display: block;
+  background-color: #38C3FF;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  transition: background .3s ease, color .3s ease;
+}
+
+.evo_c-accordion__title:link, .evo_c-accordion__title:visited, .evo_c-accordion__title:active {
+  text-decoration: none;
+  color: white;
+}
+
+.evo_c-accordion__title:hover {
+  background-color: #85daff;
+}
+
+.evo_c-accordion__title.is-active {
+  background-color: #85daff;
+}
+
+@media (min-width: 361px) and (max-width: 600px) {
+  .evo_c-accordion__title {
+    background-color: #7AEC1E;
+  }
+
+  .evo_c-accordion__title:hover {
+    background-color: #a4f265;
+  }
+
+  .evo_c-accordion__title.is-active {
+    background-color: #a4f265;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .evo_c-accordion__title {
+    background-color: #ADADAD;
+  }
+
+  .evo_c-accordion__title:hover {
+    background-color: lightgray;
+  }
+
+  .evo_c-accordion__title.is-active {
+    background-color: lightgray;
+  }
+}
+@media (min-width: 1025px) {
+  .evo_c-accordion__title {
+    background-color: #FF3B2E;
+  }
+
+  .evo_c-accordion__title:hover {
+    background-color: #ff837b;
+  }
+
+  .evo_c-accordion__title.is-active {
+    background-color: #ff837b;
+  }
+}
+.evo_c-accordion__content {
+  max-height: 0;
+  min-height: 0;
+  padding-left: .625em;
+  padding-right: .625em;
+  margin-bottom: .5em;
+  background: white;
+  overflow-y: scroll;
+  transition: all .5s ease;
+  box-shadow: 0px 2px 4px 0px #8c8c8c;
+  opacity: 0;
+}
+
+.evo_c-accordion__content.is-expanded {
+  min-height: 400px;
+  padding-top: 1em;
+  background: #e6e9ed;
+  opacity: 1;
+}
+
 /* BAR GRAPHS
   ================================ */
 .total-bar {

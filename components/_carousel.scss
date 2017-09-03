@@ -2,33 +2,50 @@
   ================================ */
 
 .carousel {
-  position: relative;
+  // z-index: -200;
 }
 
-.proj-1-slide-1,
-.proj-2-slide-1 {
-  // display: block;
-  position: relative;
-  // top:0;
-  // left:0;
-  opacity: 1;
+.carousel input {
+  display: none;
+  // visibility: hidden;
 }
 
-.proj-1-slide-2,
-.proj-1-slide-3 {
+div[class|="proj"] {
   position: absolute;
-  pointer-events: none;
   opacity: 0;
+  pointer-events: none;
+  // display: none;
 }
+
+
+.carousel .proj-1-slide-1,
+.carousel .proj-2-slide-1,
+.carousel .proj-3-slide-1 {
+//   // display: block;
+//   position: relative;
+//   // top:0;
+//   // left:0;
+  opacity: 1;
+  pointer-events: initial;
+  // display: initial;
+}
+
+// .proj-1-slide-2,
+// .proj-1-slide-3 {
+//   position: absolute;
+//   // pointer-events: none;
+//   opacity: 0;
+// }
 
 #proj-1-slide-1:checked ~ .proj-1-slide-1,
 #proj-1-slide-2:checked ~ .proj-1-slide-2,
 #proj-1-slide-3:checked ~ .proj-1-slide-3 {
-  // display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+//   // display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
   opacity: 1;
+  pointer-events: initial;
 }
 
 #proj-1-slide-2:checked ~ .proj-1-slide-1,
@@ -38,27 +55,51 @@
 #proj-1-slide-1:checked ~ .proj-1-slide-2,
 #proj-1-slide-1:checked ~ .proj-1-slide-3 {
   opacity: 0;
-  position: absolute;
+  pointer-events: none;
+//   position: absolute;
 }
 
 
 .carousel .carousel-nav {
-  display: inline-block;
-  // position: absolute;
-  background: initial;
-  box-shadow: none;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
+//   display: inline-block;
+//   // position: absolute;
+//   background: initial;
+//   box-shadow: none;
+//   padding: 10px;
+//   position: relative;
+//   bottom: 0;
+  transition: color .3s ease;
+  z-index: 100;
+}
+.carousel .carousel-nav .material-icons {
+  font-size: 2em;
 }
 
-.slide-content {
+.carousel .slide-content {
   display: inline-block;
   max-width: 75%;
 }
 
 .carousel .carousel-nav:hover,
 .carousel .carousel-nav:focus {
-color: red;
-background-color: initial;
+  color: red;
+  cursor: pointer;
+  cursor: hand;
+  // background-color: initial;
+}
+
+/* NEW CAROUSEL
+  ================================ */
+
+.evo_c-accordion__content figure div {
+  width: 20%;
+  float: left;
+  // display: inline-block;
+}
+
+.evo_c-accordion__content figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
 }

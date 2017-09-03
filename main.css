@@ -338,7 +338,8 @@ h4 {
   color: white;
 }
 
-.evo_c-accordion__title:hover {
+.evo_c-accordion__title:hover,
+.evo_c-accordion__title:focus {
   background-color: #85daff;
 }
 
@@ -346,45 +347,6 @@ h4 {
   background-color: #85daff;
 }
 
-@media (min-width: 361px) and (max-width: 600px) {
-  .evo_c-accordion__title {
-    background-color: #7AEC1E;
-  }
-
-  .evo_c-accordion__title:hover {
-    background-color: #a4f265;
-  }
-
-  .evo_c-accordion__title.is-active {
-    background-color: #a4f265;
-  }
-}
-@media (min-width: 601px) and (max-width: 1024px) {
-  .evo_c-accordion__title {
-    background-color: #ADADAD;
-  }
-
-  .evo_c-accordion__title:hover {
-    background-color: lightgray;
-  }
-
-  .evo_c-accordion__title.is-active {
-    background-color: lightgray;
-  }
-}
-@media (min-width: 1025px) {
-  .evo_c-accordion__title {
-    background-color: #FF3B2E;
-  }
-
-  .evo_c-accordion__title:hover {
-    background-color: #ff837b;
-  }
-
-  .evo_c-accordion__title.is-active {
-    background-color: #ff837b;
-  }
-}
 .evo_c-accordion__content {
   max-height: 0;
   min-height: 0;
@@ -405,6 +367,60 @@ h4 {
   opacity: 1;
 }
 
+@media (min-width: 361px) and (max-width: 600px) {
+  .evo_c-accordion__title {
+    background-color: #7AEC1E;
+  }
+
+  .evo_c-accordion__title:hover,
+  .evo_c-accordion__title:focus {
+    background-color: #a4f265;
+  }
+
+  .evo_c-accordion__title.is-active {
+    background-color: #a4f265;
+  }
+
+  .evo_c-accordion__content.is-expanded {
+    background: #e6e9ed;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .evo_c-accordion__title {
+    background-color: #ADADAD;
+  }
+
+  .evo_c-accordion__title:hover,
+  .evo_c-accordion__title:focus {
+    background-color: lightgray;
+  }
+
+  .evo_c-accordion__title.is-active {
+    background-color: lightgray;
+  }
+
+  .evo_c-accordion__content.is-expanded {
+    background-color: lightgray;
+  }
+}
+@media (min-width: 1025px) {
+  .evo_c-accordion__title {
+    background-color: #FF3B2E;
+  }
+
+  .evo_c-accordion__title:hover,
+  .evo_c-accordion__title:focus {
+    background-color: #ff837b;
+  }
+
+  .evo_c-accordion__title.is-active {
+    background-color: #ff837b;
+  }
+
+  .evo_c-accordion__content.is-expanded {
+    background-color: #ff837b;
+  }
+}
 /* BAR GRAPHS
   ================================ */
 .total-bar {
@@ -804,30 +820,28 @@ h4 {
 
 /* CAROUSEL
   ================================ */
-.carousel {
-  position: relative;
+.carousel input {
+  display: none;
 }
 
-.proj-1-slide-1,
-.proj-2-slide-1 {
-  position: relative;
-  opacity: 1;
-}
-
-.proj-1-slide-2,
-.proj-1-slide-3 {
+div[class|="proj"] {
   position: absolute;
-  pointer-events: none;
   opacity: 0;
+  pointer-events: none;
+}
+
+.carousel .proj-1-slide-1,
+.carousel .proj-2-slide-1,
+.carousel .proj-3-slide-1 {
+  opacity: 1;
+  pointer-events: initial;
 }
 
 #proj-1-slide-1:checked ~ .proj-1-slide-1,
 #proj-1-slide-2:checked ~ .proj-1-slide-2,
 #proj-1-slide-3:checked ~ .proj-1-slide-3 {
-  position: absolute;
-  top: 0;
-  left: 0;
   opacity: 1;
+  pointer-events: initial;
 }
 
 #proj-1-slide-2:checked ~ .proj-1-slide-1,
@@ -837,19 +851,19 @@ h4 {
 #proj-1-slide-1:checked ~ .proj-1-slide-2,
 #proj-1-slide-1:checked ~ .proj-1-slide-3 {
   opacity: 0;
-  position: absolute;
+  pointer-events: none;
 }
 
 .carousel .carousel-nav {
-  display: inline-block;
-  background: initial;
-  box-shadow: none;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
+  transition: color .3s ease;
+  z-index: 100;
 }
 
-.slide-content {
+.carousel .carousel-nav .material-icons {
+  font-size: 2em;
+}
+
+.carousel .slide-content {
   display: inline-block;
   max-width: 75%;
 }
@@ -857,7 +871,22 @@ h4 {
 .carousel .carousel-nav:hover,
 .carousel .carousel-nav:focus {
   color: red;
-  background-color: initial;
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* NEW CAROUSEL
+  ================================ */
+.evo_c-accordion__content figure div {
+  width: 20%;
+  float: left;
+}
+
+.evo_c-accordion__content figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
 }
 
 /* MODAL

@@ -39,6 +39,7 @@
   background-color: $small-nav-color;
   text-decoration: none;
   text-align: center;
+  font-weight: 700;
   // font-family: "Helvetica", sans-serif;
   color: white;
   transition: background .3s ease, color .3s ease;
@@ -78,7 +79,7 @@
   padding-top: 1em;
   background: #e6e9ed;
   // background-color: lighten($small-nav-color,15%);
-
+  // position: absolute;
   opacity: 1;
   // display: initial;
 }
@@ -117,7 +118,7 @@
     background-color: lighten($large-nav-color,15%);
   }
   .evo_c-accordion__content {
-    // box-shadow: 2px 2px 4px 0px #8c8c8c;
+    box-shadow: 2px 2px 4px 0px #8c8c8c;
   }
   .evo_c-accordion__content.is-expanded {
     background-color: lighten($large-nav-color,15%);
@@ -136,6 +137,9 @@
   .evo_c-accordion__title.is-active {
     // background-color: #B93E40;
     background-color: lighten($huge-nav-color,15%);
+  }
+  .evo_c-accordion__content {
+    box-shadow: 2px 2px 4px 0px #8c8c8c;
   }
   .evo_c-accordion__content.is-expanded {
     background-color: lighten($huge-nav-color,15%);

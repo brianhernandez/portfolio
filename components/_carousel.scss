@@ -14,13 +14,14 @@ div[class|="proj"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
+  overflow-y: scroll;
   // display: none;
 }
 
 
-.carousel .proj-1-slide-1,
-.carousel .proj-2-slide-1,
-.carousel .proj-3-slide-1 {
+.evo_c-accordion__content.is-expanded .carousel .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded .carousel .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded .carousel .proj-3-slide-1 {
 //   // display: block;
 //   position: relative;
 //   // top:0;
@@ -37,9 +38,12 @@ div[class|="proj"] {
 //   opacity: 0;
 // }
 
-#proj-1-slide-1:checked ~ .proj-1-slide-1,
-#proj-1-slide-2:checked ~ .proj-1-slide-2,
-#proj-1-slide-3:checked ~ .proj-1-slide-3 {
+.evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-3 {
 //   // display: block;
 //   position: absolute;
 //   top: 0;
@@ -48,12 +52,19 @@ div[class|="proj"] {
   pointer-events: initial;
 }
 
-#proj-1-slide-2:checked ~ .proj-1-slide-1,
-#proj-1-slide-2:checked ~ .proj-1-slide-3,
-#proj-1-slide-3:checked ~ .proj-1-slide-1,
-#proj-1-slide-3:checked ~ .proj-1-slide-2,
-#proj-1-slide-1:checked ~ .proj-1-slide-2,
-#proj-1-slide-1:checked ~ .proj-1-slide-3 {
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-3,
+
+.evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-3 {
   opacity: 0;
   pointer-events: none;
 //   position: absolute;

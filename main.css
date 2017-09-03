@@ -329,6 +329,7 @@ h4 {
   background-color: #38C3FF;
   text-decoration: none;
   text-align: center;
+  font-weight: 700;
   color: white;
   transition: background .3s ease, color .3s ease;
 }
@@ -399,6 +400,10 @@ h4 {
     background-color: lightgray;
   }
 
+  .evo_c-accordion__content {
+    box-shadow: 2px 2px 4px 0px #8c8c8c;
+  }
+
   .evo_c-accordion__content.is-expanded {
     background-color: lightgray;
   }
@@ -415,6 +420,10 @@ h4 {
 
   .evo_c-accordion__title.is-active {
     background-color: #ff837b;
+  }
+
+  .evo_c-accordion__content {
+    box-shadow: 2px 2px 4px 0px #8c8c8c;
   }
 
   .evo_c-accordion__content.is-expanded {
@@ -828,28 +837,38 @@ div[class|="proj"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
+  overflow-y: scroll;
 }
 
-.carousel .proj-1-slide-1,
-.carousel .proj-2-slide-1,
-.carousel .proj-3-slide-1 {
+.evo_c-accordion__content.is-expanded .carousel .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded .carousel .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded .carousel .proj-3-slide-1 {
   opacity: 1;
   pointer-events: initial;
 }
 
-#proj-1-slide-1:checked ~ .proj-1-slide-1,
-#proj-1-slide-2:checked ~ .proj-1-slide-2,
-#proj-1-slide-3:checked ~ .proj-1-slide-3 {
+.evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-3 {
   opacity: 1;
   pointer-events: initial;
 }
 
-#proj-1-slide-2:checked ~ .proj-1-slide-1,
-#proj-1-slide-2:checked ~ .proj-1-slide-3,
-#proj-1-slide-3:checked ~ .proj-1-slide-1,
-#proj-1-slide-3:checked ~ .proj-1-slide-2,
-#proj-1-slide-1:checked ~ .proj-1-slide-2,
-#proj-1-slide-1:checked ~ .proj-1-slide-3 {
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-3 {
   opacity: 0;
   pointer-events: none;
 }

@@ -27,13 +27,16 @@ div[class|="proj"] {
 
 .evo_c-accordion__content.is-expanded .carousel .proj-1-slide-1,
 .evo_c-accordion__content.is-expanded .carousel .proj-2-slide-1,
-.evo_c-accordion__content.is-expanded .carousel .proj-3-slide-1 {
+.evo_c-accordion__content.is-expanded .carousel .proj-3-slide-1,
+.evo_c-accordion__content.is-expanded .carousel .proj-4-slide-1,
+.evo_c-accordion__content.is-expanded .carousel .proj-5-slide-1 {
 //   // display: block;
 //   position: relative;
 //   // top:0;
 //   // left:0;
   opacity: 1;
   pointer-events: initial;
+  transition: opacity .3s ease;
   // display: initial;
 }
 
@@ -44,35 +47,105 @@ div[class|="proj"] {
 //   opacity: 0;
 // }
 
+/* When an accordion bellow is expanded, make the first slide of its carousel
+   active by bringing its opacity to 1.*/
 .evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-1,
 .evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-2,
 .evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-1-slide-4:checked ~ .proj-1-slide-4,
 .evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-1,
 .evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-2,
-.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-3 {
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-4:checked ~ .proj-2-slide-4,
+.evo_c-accordion__content.is-expanded #proj-3-slide-1:checked ~ .proj-3-slide-1,
+.evo_c-accordion__content.is-expanded #proj-3-slide-2:checked ~ .proj-3-slide-2,
+.evo_c-accordion__content.is-expanded #proj-3-slide-3:checked ~ .proj-3-slide-3,
+.evo_c-accordion__content.is-expanded #proj-3-slide-4:checked ~ .proj-3-slide-4,
+.evo_c-accordion__content.is-expanded #proj-4-slide-1:checked ~ .proj-4-slide-1,
+.evo_c-accordion__content.is-expanded #proj-4-slide-2:checked ~ .proj-4-slide-2,
+.evo_c-accordion__content.is-expanded #proj-4-slide-3:checked ~ .proj-4-slide-3,
+.evo_c-accordion__content.is-expanded #proj-4-slide-4:checked ~ .proj-4-slide-4,
+.evo_c-accordion__content.is-expanded #proj-5-slide-1:checked ~ .proj-5-slide-1,
+.evo_c-accordion__content.is-expanded #proj-5-slide-2:checked ~ .proj-5-slide-2,
+.evo_c-accordion__content.is-expanded #proj-5-slide-3:checked ~ .proj-5-slide-3,
+.evo_c-accordion__content.is-expanded #proj-5-slide-4:checked ~ .proj-5-slide-4 {
 //   // display: block;
 //   position: absolute;
 //   top: 0;
 //   left: 0;
   opacity: 1;
   pointer-events: initial;
+  transition: opacity .3s ease;
 }
-
-.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-1,
-.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-3,
-.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-1,
-.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-2,
+/* For each project, when one slide is activate, ensure all other slides of that carousel
+   is deactive by bringing its opacity back to 0*/
 .evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-2,
 .evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-1-slide-1:checked ~ .proj-1-slide-4,
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-3,
+.evo_c-accordion__content.is-expanded #proj-1-slide-2:checked ~ .proj-1-slide-4,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-3:checked ~ .proj-1-slide-4,
+.evo_c-accordion__content.is-expanded #proj-1-slide-4:checked ~ .proj-1-slide-1,
+.evo_c-accordion__content.is-expanded #proj-1-slide-4:checked ~ .proj-1-slide-2,
+.evo_c-accordion__content.is-expanded #proj-1-slide-4:checked ~ .proj-1-slide-3,
 
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-4,
 .evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-1,
 .evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-3,
+.evo_c-accordion__content.is-expanded #proj-2-slide-2:checked ~ .proj-2-slide-4,
 .evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-1,
 .evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-2,
-.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-2,
-.evo_c-accordion__content.is-expanded #proj-2-slide-1:checked ~ .proj-2-slide-3 {
+.evo_c-accordion__content.is-expanded #proj-2-slide-3:checked ~ .proj-2-slide-4,
+.evo_c-accordion__content.is-expanded #proj-2-slide-4:checked ~ .proj-2-slide-1,
+.evo_c-accordion__content.is-expanded #proj-2-slide-4:checked ~ .proj-2-slide-2,
+.evo_c-accordion__content.is-expanded #proj-2-slide-4:checked ~ .proj-2-slide-3,
+
+.evo_c-accordion__content.is-expanded #proj-3-slide-1:checked ~ .proj-3-slide-2,
+.evo_c-accordion__content.is-expanded #proj-3-slide-1:checked ~ .proj-3-slide-3,
+.evo_c-accordion__content.is-expanded #proj-3-slide-1:checked ~ .proj-3-slide-4,
+.evo_c-accordion__content.is-expanded #proj-3-slide-2:checked ~ .proj-3-slide-1,
+.evo_c-accordion__content.is-expanded #proj-3-slide-2:checked ~ .proj-3-slide-3,
+.evo_c-accordion__content.is-expanded #proj-3-slide-2:checked ~ .proj-3-slide-4,
+.evo_c-accordion__content.is-expanded #proj-3-slide-3:checked ~ .proj-3-slide-1,
+.evo_c-accordion__content.is-expanded #proj-3-slide-3:checked ~ .proj-3-slide-2,
+.evo_c-accordion__content.is-expanded #proj-3-slide-3:checked ~ .proj-3-slide-4,
+.evo_c-accordion__content.is-expanded #proj-3-slide-4:checked ~ .proj-3-slide-1,
+.evo_c-accordion__content.is-expanded #proj-3-slide-4:checked ~ .proj-3-slide-2,
+.evo_c-accordion__content.is-expanded #proj-3-slide-4:checked ~ .proj-3-slide-3,
+
+.evo_c-accordion__content.is-expanded #proj-4-slide-1:checked ~ .proj-4-slide-2,
+.evo_c-accordion__content.is-expanded #proj-4-slide-1:checked ~ .proj-4-slide-3,
+.evo_c-accordion__content.is-expanded #proj-4-slide-1:checked ~ .proj-4-slide-4,
+.evo_c-accordion__content.is-expanded #proj-4-slide-2:checked ~ .proj-4-slide-1,
+.evo_c-accordion__content.is-expanded #proj-4-slide-2:checked ~ .proj-4-slide-3,
+.evo_c-accordion__content.is-expanded #proj-4-slide-2:checked ~ .proj-4-slide-4,
+.evo_c-accordion__content.is-expanded #proj-4-slide-3:checked ~ .proj-4-slide-1,
+.evo_c-accordion__content.is-expanded #proj-4-slide-3:checked ~ .proj-4-slide-2,
+.evo_c-accordion__content.is-expanded #proj-4-slide-3:checked ~ .proj-4-slide-4,
+.evo_c-accordion__content.is-expanded #proj-4-slide-4:checked ~ .proj-4-slide-1,
+.evo_c-accordion__content.is-expanded #proj-4-slide-4:checked ~ .proj-4-slide-2,
+.evo_c-accordion__content.is-expanded #proj-4-slide-4:checked ~ .proj-4-slide-3,
+
+.evo_c-accordion__content.is-expanded #proj-5-slide-1:checked ~ .proj-5-slide-2,
+.evo_c-accordion__content.is-expanded #proj-5-slide-1:checked ~ .proj-5-slide-3,
+.evo_c-accordion__content.is-expanded #proj-5-slide-1:checked ~ .proj-5-slide-4,
+.evo_c-accordion__content.is-expanded #proj-5-slide-2:checked ~ .proj-5-slide-1,
+.evo_c-accordion__content.is-expanded #proj-5-slide-2:checked ~ .proj-5-slide-3,
+.evo_c-accordion__content.is-expanded #proj-5-slide-2:checked ~ .proj-5-slide-4,
+.evo_c-accordion__content.is-expanded #proj-5-slide-3:checked ~ .proj-5-slide-1,
+.evo_c-accordion__content.is-expanded #proj-5-slide-3:checked ~ .proj-5-slide-2,
+.evo_c-accordion__content.is-expanded #proj-5-slide-3:checked ~ .proj-5-slide-4,
+.evo_c-accordion__content.is-expanded #proj-5-slide-4:checked ~ .proj-5-slide-1,
+.evo_c-accordion__content.is-expanded #proj-5-slide-4:checked ~ .proj-5-slide-2,
+.evo_c-accordion__content.is-expanded #proj-5-slide-4:checked ~ .proj-5-slide-3 {
   opacity: 0;
   pointer-events: none;
+  transition: opacity .3s ease;
 //   position: absolute;
 }
 
@@ -85,12 +158,13 @@ div[class|="proj"] {
 //   padding: 10px;
 //   position: relative;
 //   bottom: 0;
-  top: 50%;
+  // top: 50%;
   transition: color .3s ease;
   z-index: 100;
-  @media screen and (min-width: $large) {
-    top: 75%
-  }
+  align-self: stretch;
+  // @media screen and (min-width: $large) {
+    // top: 75%
+  // }
 }
 // .carousel .carousel-nav:last-child {
 //   right: .5em;

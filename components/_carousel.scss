@@ -14,7 +14,8 @@ div[class|="proj"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  overflow-y: scroll;
+  width: 100%;
+  // overflow-y: scroll;
   // display: none;
 }
 
@@ -73,14 +74,21 @@ div[class|="proj"] {
 
 .carousel .carousel-nav {
 //   display: inline-block;
-//   // position: absolute;
+  position: absolute;
 //   background: initial;
 //   box-shadow: none;
 //   padding: 10px;
 //   position: relative;
 //   bottom: 0;
+  top: 50%;
   transition: color .3s ease;
   z-index: 100;
+  @media screen and (min-width: $large) {
+    top: 75%
+  }
+}
+.carousel .carousel-nav:last-child {
+  right: .5em;
 }
 .carousel .carousel-nav .material-icons {
   font-size: 2em;
@@ -88,7 +96,7 @@ div[class|="proj"] {
 
 .carousel .slide-content {
   display: inline-block;
-  max-width: 75%;
+  max-width: 90%;
 }
 
 .carousel .carousel-nav:hover,
@@ -97,6 +105,24 @@ div[class|="proj"] {
   cursor: pointer;
   cursor: hand;
   // background-color: initial;
+}
+
+.project-links {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: inherit;
+  border-bottom: 3px solid transparent;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin-bottom: .7em;
+  display: inline-block;
+  transform: border .3s ease,
+              color .3s ease;
+}
+.project-links:focus,
+.project-links:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
 }
 
 /* NEW CAROUSEL

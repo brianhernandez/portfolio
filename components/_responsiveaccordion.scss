@@ -16,16 +16,16 @@
 }
 @media screen and (min-width: $large) {
   .evo_c-accordion__bellow {
-    max-width: 350px;
+    max-width: 200px;
     margin-bottom: .5em;
     box-shadow: -2px 2px 4px 0px #8c8c8c;
   }
   .evo_c-accordion__content {
     position: absolute;
     top: 0;
-    left: 350px;
+    left: 200px;
     padding-bottom: .625em;
-    min-width: 500px;
+    min-width: 67%;
     min-height: 500px;
 
     box-shadow: 2px 2px 4px 0px #8c8c8c;
@@ -60,8 +60,8 @@
 .evo_c-accordion__content {
   max-height: 0;
   min-height: 0;
-  padding-left: .625em;
-  padding-right: .625em;
+  // padding-left: .625em;
+  // padding-right: .625em;
   // padding-bottom: .625em;
   margin-bottom: .5em;
   background: white;
@@ -138,11 +138,17 @@
     // background-color: #B93E40;
     background-color: lighten($huge-nav-color,15%);
   }
+  .evo_c-accordion__bellow {
+    max-width: 350px;
+  }
   .evo_c-accordion__content {
     box-shadow: 2px 2px 4px 0px #8c8c8c;
+    left: 350px;
   }
   .evo_c-accordion__content.is-expanded {
     background-color: lighten($huge-nav-color,15%);
+    min-height: 200%;
+    min-width: 65%;
   }
 }
 

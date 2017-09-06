@@ -307,7 +307,7 @@ h4 {
 
 @media screen and (min-width: 601px) {
   .evo_c-accordion__bellow {
-    max-width: 350px;
+    max-width: 200px;
     margin-bottom: .5em;
     box-shadow: -2px 2px 4px 0px #8c8c8c;
   }
@@ -315,9 +315,9 @@ h4 {
   .evo_c-accordion__content {
     position: absolute;
     top: 0;
-    left: 350px;
+    left: 200px;
     padding-bottom: .625em;
-    min-width: 500px;
+    min-width: 67%;
     min-height: 500px;
     box-shadow: 2px 2px 4px 0px #8c8c8c;
   }
@@ -351,8 +351,6 @@ h4 {
 .evo_c-accordion__content {
   max-height: 0;
   min-height: 0;
-  padding-left: .625em;
-  padding-right: .625em;
   margin-bottom: .5em;
   background: white;
   overflow-y: scroll;
@@ -422,12 +420,19 @@ h4 {
     background-color: #ff837b;
   }
 
+  .evo_c-accordion__bellow {
+    max-width: 350px;
+  }
+
   .evo_c-accordion__content {
     box-shadow: 2px 2px 4px 0px #8c8c8c;
+    left: 350px;
   }
 
   .evo_c-accordion__content.is-expanded {
     background-color: #ff837b;
+    min-height: 200%;
+    min-width: 65%;
   }
 }
 /* BAR GRAPHS
@@ -837,7 +842,7 @@ div[class|="proj"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  overflow-y: scroll;
+  width: 100%;
 }
 
 .evo_c-accordion__content.is-expanded .carousel .proj-1-slide-1,
@@ -874,8 +879,19 @@ div[class|="proj"] {
 }
 
 .carousel .carousel-nav {
+  position: absolute;
+  top: 50%;
   transition: color .3s ease;
   z-index: 100;
+}
+@media screen and (min-width: 601px) {
+  .carousel .carousel-nav {
+    top: 75%;
+  }
+}
+
+.carousel .carousel-nav:last-child {
+  right: .5em;
 }
 
 .carousel .carousel-nav .material-icons {
@@ -884,7 +900,7 @@ div[class|="proj"] {
 
 .carousel .slide-content {
   display: inline-block;
-  max-width: 75%;
+  max-width: 90%;
 }
 
 .carousel .carousel-nav:hover,
@@ -892,6 +908,22 @@ div[class|="proj"] {
   color: red;
   cursor: pointer;
   cursor: hand;
+}
+
+.project-links {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: inherit;
+  border-bottom: 3px solid transparent;
+  margin-bottom: .7em;
+  display: inline-block;
+  transform: border .3s ease, color .3s ease;
+}
+
+.project-links:focus,
+.project-links:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
 }
 
 /* NEW CAROUSEL

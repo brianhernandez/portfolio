@@ -843,6 +843,16 @@ div[class|="proj"] {
   opacity: 0;
   pointer-events: none;
   width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .evo_c-accordion__content.is-expanded .carousel .proj-1-slide-1,
@@ -879,7 +889,6 @@ div[class|="proj"] {
 }
 
 .carousel .carousel-nav {
-  position: absolute;
   top: 50%;
   transition: color .3s ease;
   z-index: 100;
@@ -890,22 +899,13 @@ div[class|="proj"] {
   }
 }
 
-.carousel .carousel-nav:last-child {
-  right: .5em;
-}
-
 .carousel .carousel-nav .material-icons {
-  font-size: 2em;
-}
-
-.carousel .slide-content {
-  display: inline-block;
-  max-width: 90%;
+  font-size: 3em;
 }
 
 .carousel .carousel-nav:hover,
 .carousel .carousel-nav:focus {
-  color: red;
+  color: #339EFF;
   cursor: pointer;
   cursor: hand;
 }
@@ -922,22 +922,8 @@ div[class|="proj"] {
 
 .project-links:focus,
 .project-links:hover {
-  color: blue;
-  border-bottom: 3px solid blue;
-}
-
-/* NEW CAROUSEL
-  ================================ */
-.evo_c-accordion__content figure div {
-  width: 20%;
-  float: left;
-}
-
-.evo_c-accordion__content figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
+  color: #339EFF;
+  border-bottom: 3px solid #339EFF;
 }
 
 /* MODAL

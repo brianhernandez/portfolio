@@ -17,6 +17,11 @@ div[class|="proj"] {
   width: 100%;
   // overflow-y: scroll;
   // display: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
 }
 
 
@@ -74,7 +79,7 @@ div[class|="proj"] {
 
 .carousel .carousel-nav {
 //   display: inline-block;
-  position: absolute;
+  // position: absolute;
 //   background: initial;
 //   box-shadow: none;
 //   padding: 10px;
@@ -87,21 +92,21 @@ div[class|="proj"] {
     top: 75%
   }
 }
-.carousel .carousel-nav:last-child {
-  right: .5em;
-}
+// .carousel .carousel-nav:last-child {
+//   right: .5em;
+// }
 .carousel .carousel-nav .material-icons {
-  font-size: 2em;
+  font-size: 3em;
 }
-
 .carousel .slide-content {
-  display: inline-block;
-  max-width: 90%;
+  // position: absolute;
+  // display: inline-block;
+  // max-width: 90%;
 }
 
 .carousel .carousel-nav:hover,
 .carousel .carousel-nav:focus {
-  color: red;
+  color: #339EFF;
   cursor: pointer;
   cursor: hand;
   // background-color: initial;
@@ -121,22 +126,7 @@ div[class|="proj"] {
 }
 .project-links:focus,
 .project-links:hover {
-  color: blue;
-  border-bottom: 3px solid blue;
+  color: #339EFF;
+  border-bottom: 3px solid #339EFF;
 }
 
-/* NEW CAROUSEL
-  ================================ */
-
-.evo_c-accordion__content figure div {
-  width: 20%;
-  float: left;
-  // display: inline-block;
-}
-
-.evo_c-accordion__content figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-}

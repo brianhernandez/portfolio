@@ -107,7 +107,24 @@
                   <div class="proj-2-slide-1">
                     <label class="carousel-nav" for="proj-2-slide-4"><i class="material-icons">keyboard_arrow_left</i></label>
                       <div class="slide-content">
-                        <p>Forms Project Description Here</p>
+                        <h3>All Form Projects Contain <code>validator.js</code></h3>
+                        <p>A custom made JavaScript validator file filled with various form input validation functions is used in all of the following form projects.  The validator file is named <code>validator.js</code> in the projects’ repositories.  This file is required to create the project specific validator file, usually titled <code>[project title]-validate.js</code>, to apply the appropriate validation functions to the corresponding form project.</p>
+                        <h3>Color Builder Form</h3>
+                        <p>The Color Builder Project uses a basic <code>form</code> element to bundle a set of range sliders and a color swatch as <code>input</code> elements.  When a click event is detected on any of the range inputs, the background color of the <code>input</code> color swatch is updated with the new value of the corresponding input slider that fired the click event.  The <code>rgba()</code> text at the bottom of the color swatch reflects the new RGB and alpha values.  The JavaScript script listens for these click events and also attempts to validate the form upon submission, however the range sliders prevent any invalid RGB and alpha inputs.</p>
+                        <h3>Credit Card Form</h3>
+                        <p>The Cred Card Project was an attempt to create a working credit card input form seen on many ecommerce websites.  HTML and CSS is used for the structure and styling of the form.  Google font icons are pulled in to style the <code>input</code> fields for a better user experience and to signal the type of information required in the form fields.  This form contains text and select <code>input</code> elements.  The <code>creditcard-validate.js</code> file uses some of the validator functions in <code>validator.js</code> to check form validation upon clicking the submit button.  If an invalid input is found, the JavaScript <code>setCustomValidity</code> function is set with a custom message detailing what type of invalid input was made on the responsible form field.</p>
+                        <h3>Login Form</h3>
+                        <p></p>
+                        <h3>Questionnaire Form</h3>
+                        <p></p>
+                        <h3>Scheduling Form</h3>
+                        <p></p>
+                        <h3>Search Form</h3>
+                        <p></p>
+                        <h3>Shipping and Billing Form</h3>
+                        <p></p>
+                        <h3>Signup Form</h3>
+                        <p></p>
                       </div>
                     <label class="carousel-nav" for="proj-2-slide-2"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -179,7 +196,7 @@
               </div>
             </li>
             <li class="evo_c-accordion__bellow">
-              <a class="evo_c-accordion__title js-c-accordion-target" href="#">Image Gallery</a>
+              <a class="evo_c-accordion__title js-c-accordion-target" href="#">Responsive Gallery</a>
               <div class="evo_c-accordion__content">
                 <div class="carousel">
                   <input type="radio" name="project-4" id="proj-4-slide-1">
@@ -189,16 +206,16 @@
                   <div class="proj-4-slide-1">
                     <label class="carousel-nav" for="proj-4-slide-4"><i class="material-icons">keyboard_arrow_left</i></label>
                       <div class="slide-content">
-                        <p>The Image Gallery Project...</p>
+                        <p>The Responsive Gallery Project uses a combination of HTML and CSS to create the image gallery affect of one image being selected over another.  The images are toggled by unseen radio inputs that are attached to the thumbnail images via label tags.  When a an input is checked, a sibling div that provides the space for the larger image to appear in has its background image updated to be the image that gets shown.  Flexbox is used to responsively display the thumbnail images along the top of the gallery.</p>
                       </div>
                     <label class="carousel-nav" for="proj-4-slide-2"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
                   <div class="proj-4-slide-2">
                     <label class="carousel-nav" for="proj-4-slide-1"><i class="material-icons">keyboard_arrow_left</i></label>
                       <div class="slide-content">
-                        <img src="img/gallery1.png" alt="Image Gallery Image 1">
-                        <img src="img/gallery2.png" alt="Image Gallery Image 2">
-                        <img src="img/gallery3.png" alt="Image Gallery Image 3">
+                        <img src="img/gallery1.png" alt="Responsive Gallery Image 1">
+                        <img src="img/gallery2.png" alt="Responsive Gallery Image 2">
+                        <img src="img/gallery3.png" alt="Responsive Gallery Image 3">
                       </div>
                     <label class="carousel-nav" for="proj-4-slide-3"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -223,12 +240,45 @@
             <li class="evo_c-accordion__bellow">
               <a class="evo_c-accordion__title js-c-accordion-target" href="#">Accordion</a>
               <div class="evo_c-accordion__content">
-                <h3>Try One Of Our Healthy Salads To Stay Fit!</h3>
-                <h5>Traditional</h5>
-                <ul>
-                  <li>Ceasar Salad - $8.99</li>
-                  <li>Spring Medley Mix - $4.99</li>
-                </ul>
+                <div class="carousel">
+                  <input type="radio" name="project-5" id="proj-5-slide-1">
+                  <input type="radio" name="project-5" id="proj-5-slide-2">
+                  <input type="radio" name="project-5" id="proj-5-slide-3">
+                  <input type="radio" name="project-5" id="proj-5-slide-4">
+                  <div class="proj-5-slide-1">
+                    <label class="carousel-nav" for="proj-5-slide-4"><i class="material-icons">keyboard_arrow_left</i></label>
+                      <div class="slide-content">
+                        <p>The Accordion Project is structured using a <code>ul</code> element.  A JavaScript hook is attached within each <code>li</code> element of the unordered list that listens for a click event on it.  When a click event is detected, if the target that triggered the event contains the <code>is-active</code> class, the class is removed and its associated <code>is-expanded</code> class attached to its neighboring bellow content <code>div</code> is removed as well.  If the <code>is-active</code> class is not attached to the target, attach this class while removing it from all other bellows and also removing the <code>is-expanded</code> class from other bellow content <code>div</code>s.  Then, attach this <code>is-expanded</code> class to the sibling bellow content <code>div</code> of the element that triggered the click event.  This creates an auto closing and opening of the appropriate bellows of the accordion no matter what state they are found in when clicked.</p>
+                      </div>
+                    <label class="carousel-nav" for="proj-5-slide-2"><i class="material-icons">keyboard_arrow_right</i></label>
+                  </div>
+                  <div class="proj-5-slide-2">
+                    <label class="carousel-nav" for="proj-5-slide-1"><i class="material-icons">keyboard_arrow_left</i></label>
+                      <div class="slide-content">
+                        <img src="img/accordion1.png" alt="Accordion Image 1">
+                        <img src="img/accordion2.png" alt="Accordion Image 2">
+                        <img src="img/accordion3.png" alt="Accordion Image 3">
+                        <img src="img/accordion4.png" alt="Accordion Image 4">
+                        <img src="img/accordion5.png" alt="Accordion Image 5">
+                      </div>
+                    <label class="carousel-nav" for="proj-5-slide-3"><i class="material-icons">keyboard_arrow_right</i></label>
+                  </div>
+                  <div class="proj-5-slide-3">
+                    <label class="carousel-nav" for="proj-5-slide-2"><i class="material-icons">keyboard_arrow_left</i></label>
+                      <div class="slide-content">
+                          <a href="https://github.com/brianhernandez/intro-to-responsive-design__responsive-accordion" class="project-links">GitHub Repository</a>
+                          <a href="https://brianhernandez.github.io/intro-to-responsive-design__responsive-accordion/" class="project-links">Live Demo Site</a>
+                      </div>
+                    <label class="carousel-nav" for="proj-5-slide-4"><i class="material-icons">keyboard_arrow_right</i></label>
+                  </div>
+                  <div class="proj-5-slide-4">
+                    <label class="carousel-nav" for="proj-5-slide-3"><i class="material-icons">keyboard_arrow_left</i></label>
+                      <div class="slide-content">
+                          <p>LIVE DEMO GOES HERE</p>
+                      </div>
+                    <label class="carousel-nav" for="proj-5-slide-1"><i class="material-icons">keyboard_arrow_right</i></label>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>

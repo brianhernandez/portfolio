@@ -198,9 +198,13 @@ div[class|="proj"] {
   transform: border .3s ease,
               color .3s ease;
 }
+
 .project-links:focus,
 .project-links:hover {
   color: #339EFF;
   border-bottom: 3px solid #339EFF;
 }
 
+.project-heading {
+  margin: .7em 0;
+}

@@ -4,3 +4,42 @@
 .content-about {
   // min-height: 10em;
 }
+
+.about-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 932px) {
+    justify-content: space-between;
+  }
+}
+
+.about-wrapper div {
+  // display: inline-block;
+  width: 100%;
+
+  @media screen and (min-width: 932px) {
+    width: 50%;
+  }
+}
+
+.about-wrapper img {
+  width: 100%;
+  max-width: 450px;
+  // max-height: 450px;
+  height: auto;
+  margin-bottom: 1em;
+  // max-width: 300px;
+  border-radius: 50%;
+  // display: inline-block;
+  // margin-bottom: 1em;
+
+
+}
+
+.about-wrapper p {
+  margin-bottom: .6em;
+  // display: inline-block;
+}

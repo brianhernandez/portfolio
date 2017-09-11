@@ -1208,6 +1208,7 @@ div[class|="proj"] {
 #offcanvas-toggle-label i {
   float: left;
   line-height: 1.5em;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 601px) {
@@ -1374,6 +1375,44 @@ h1.site-name:hover {
 
 /* ABOUT
   ================================ */
+.about-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+@media screen and (min-width: 932px) {
+  .about-wrapper {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+}
+
+.about-wrapper div {
+  width: 100%;
+}
+@media screen and (min-width: 932px) {
+  .about-wrapper div {
+    width: 50%;
+  }
+}
+
+.about-wrapper img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+.about-wrapper p {
+  margin-bottom: .6em;
+}
+
 /* CONTACT
   ================================ */
 /* FOOTER
@@ -1397,6 +1436,10 @@ h1.site-name:hover {
   .main-footer {
     background: linear-gradient(135deg, #c9332b 0%, #ff3c2e 100%);
   }
+}
+
+.main-footer p {
+  text-align: center;
 }
 
 /* GRID (AUTHORED BY LENA FAURE)

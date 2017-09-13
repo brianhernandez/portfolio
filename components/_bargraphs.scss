@@ -82,7 +82,7 @@
 
 .bars {
   display: inline;
-  margin-left: 3em;
+  margin-left: 10%;
   position: relative;
   bottom: -4px;
   // float: right;
@@ -105,8 +105,11 @@
   // padding: 0;
 
   @media screen and (min-width: $large) {
-    width: 9%;
+    width: 8%;
     margin-right: .3em;
+  }
+  @media screen and (min-width: $huge) {
+    width: 9%;
   }
   // @media screen and (min-width: $large) and (max-width: 786px) {
     // width: 6%;
@@ -229,16 +232,22 @@
 
 .x-axis {
   display: inline-block;
-  margin-left: 9em;
-  margin-top: 1em;
+  // margin-left: 9em;
+  margin-top: 3em;
+  margin-left: 23%;
+  font-weight: 700;
+  font-size: .75em;
+  // margin-right: auto;
 }
 
 .other-skills-graph-container .x-axis {
-  margin-left: 0em;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  // margin-left: 0em;
 
   @media screen and (min-width: $large) {
-      margin-left: 26em;
-      margin-top: 2.5em;
+      // margin-left: 26em;
+      // margin-top: 2.5em;
 
       // .x-li:nth-child(2) {
       //   margin-left: -7em;
@@ -258,12 +267,48 @@
 
 .x-li {
   display: inline-block;
-  transform: rotate(45deg);
-  font-size: .5em;
+  transform: rotate(55deg);
+  // font-size: 1em;
+  // margin-bottom: 10%;
+  position: absolute;
   // padding-right: 1em;
   // position: absolute;
 }
+.x-li:nth-child(1) {
+  margin-left: 10%;
+}
+.x-li:nth-child(2) {
+  margin-left: 20%;
+}
+.x-li:nth-child(3) {
+  margin-left: 30%;
+}
+.x-li:nth-child(4) {
+  margin-left: 40%;
+}
+.x-li:nth-child(5) {
+  margin-left: 50%;
+}
+
+.other-skills-graph-container .x-li:nth-child(1) {
+  margin-left: 5%;
+}
+.other-skills-graph-container .x-li:nth-child(2) {
+  margin-left: 18%;
+  margin-top: -1em;
+}
+.other-skills-graph-container .x-li:nth-child(3) {
+  margin-left: 25%;
+}
+.other-skills-graph-container .x-li:nth-child(4) {
+  margin-left: 40%;
+  margin-top: -2.5em;
+}
+.other-skills-graph-container .x-li:nth-child(5) {
+  margin-left: 48%;
+  margin-top: -2em;
+}
 
 .backend-graph-container .x-li {
-  padding-right: 2em;
+  // padding-right: 2em;
 }

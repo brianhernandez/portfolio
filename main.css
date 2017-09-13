@@ -468,12 +468,12 @@ code {
 }
 
 .frontend-bar {
-  width: 70%;
+  width: 80%;
   background: #FB5E5D;
 }
 
 .backend-bar {
-  width: 30%;
+  width: 20%;
   background: #4A6FEB;
   text-align: right;
 }
@@ -533,15 +533,15 @@ code {
 
 .bar-li {
   display: inline-block;
-  width: 9%;
+  width: 7%;
   list-style: none;
   position: relative;
   margin-right: .5em;
   box-shadow: 2px -2px 4px 0px #8c8c8c;
 }
-@media screen and (min-width: 601px) and (max-width: 786px) {
+@media screen and (min-width: 601px) {
   .bar-li {
-    width: 6%;
+    width: 9%;
     margin-right: .3em;
   }
 }
@@ -568,11 +568,11 @@ code {
 
 /* Frontend Bar Graph Heights */
 .frontend-graph .bar-li:nth-child(1) {
-  height: 7em;
+  height: 6.4em;
 }
 
 .frontend-graph .bar-li:nth-child(2) {
-  height: 12em;
+  height: 9.4em;
 }
 
 .frontend-graph .bar-li:nth-child(3) {
@@ -584,7 +584,7 @@ code {
 }
 
 .frontend-graph .bar-li:nth-child(5) {
-  height: 9em;
+  height: 7.5em;
 }
 
 /* Backend Bar Graph Heights */
@@ -593,11 +593,11 @@ code {
 }
 
 .backend-graph .bar-li:nth-child(2) {
-  height: 4em;
+  height: 3em;
 }
 
 .backend-graph .bar-li:nth-child(3) {
-  height: 5.5em;
+  height: 5em;
 }
 
 .backend-graph .bar-li:nth-child(4) {
@@ -614,19 +614,19 @@ code {
 }
 
 .other-graph .bar-li:nth-child(2) {
-  height: 7em;
+  height: 8.5em;
 }
 
 .other-graph .bar-li:nth-child(3) {
-  height: 6em;
+  height: 2em;
 }
 
 .other-graph .bar-li:nth-child(4) {
-  height: 10em;
+  height: 3em;
 }
 
 .other-graph .bar-li:nth-child(5) {
-  height: 4em;
+  height: 5.5em;
 }
 
 /*  Tooltip Code */
@@ -656,6 +656,8 @@ code {
   color: #fff;
   content: attr(data-tooltip);
   font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.5em;
   padding: 6px 10px;
   top: 26px;
   left: -5em;
@@ -679,7 +681,8 @@ code {
 }
 @media screen and (min-width: 601px) {
   .other-skills-graph-container .x-axis {
-    margin-left: 20em;
+    margin-left: 26em;
+    margin-top: 2.5em;
   }
 }
 
@@ -1415,6 +1418,10 @@ h1.site-name:hover {
 
 /* CONTACT
   ================================ */
+#contact p {
+  margin-bottom: .6em;
+}
+
 /* FOOTER
   ================================ */
 .main-footer {

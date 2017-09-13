@@ -22,12 +22,12 @@
 }
 
 .frontend-bar {
-  width: 70%;
+  width: 80%;
   background: #FB5E5D;
 }
 
 .backend-bar {
-  width: 30%;
+  width: 20%;
   background: #4A6FEB;
   text-align: right;
 }
@@ -94,7 +94,8 @@
 
 .bar-li {
   display: inline-block;
-  width: 9%;
+  // width: 9%;
+  width: 7%;
   // height: 100px;
   // height: attr(data-height);
   list-style: none;
@@ -103,10 +104,14 @@
   box-shadow: 2px -2px 4px 0px rgba(140,140,140,1);
   // padding: 0;
 
-  @media screen and (min-width: $large) and (max-width: 786px) {
-    width: 6%;
+  @media screen and (min-width: $large) {
+    width: 9%;
     margin-right: .3em;
   }
+  // @media screen and (min-width: $large) and (max-width: 786px) {
+    // width: 6%;
+    // margin-right: .3em;
+  // }
 }
 
 .bar-li:nth-child(1) {
@@ -131,10 +136,10 @@
 
 /* Frontend Bar Graph Heights */
 .frontend-graph .bar-li:nth-child(1) {
-  height: 7em;
+  height: 6.4em;
 }
 .frontend-graph .bar-li:nth-child(2) {
-  height: 12em;
+  height: 9.4em;
 }
 .frontend-graph .bar-li:nth-child(3) {
   height: 2em;
@@ -143,7 +148,7 @@
   height: 2em;
 }
 .frontend-graph .bar-li:nth-child(5) {
-  height: 9em;
+  height: 7.5em;
 }
 
 /* Backend Bar Graph Heights */
@@ -151,10 +156,10 @@
   height: 2em;
 }
 .backend-graph .bar-li:nth-child(2) {
-  height: 4em;
+  height: 3em;
 }
 .backend-graph .bar-li:nth-child(3) {
-  height: 5.5em;
+  height: 5em;
 }
 .backend-graph .bar-li:nth-child(4) {
   height: 3em;
@@ -168,16 +173,16 @@
   height: 11em;
 }
 .other-graph .bar-li:nth-child(2) {
-  height: 7em;
+  height: 8.5em;
 }
 .other-graph .bar-li:nth-child(3) {
-  height: 6em;
+  height: 2em;
 }
 .other-graph .bar-li:nth-child(4) {
-  height: 10em;
+  height: 3em;
 }
 .other-graph .bar-li:nth-child(5) {
-  height: 4em;
+  height: 5.5em;
 }
 
 /*  Tooltip Code */
@@ -206,6 +211,8 @@
   color: #fff;
   content: attr(data-tooltip);
   font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.5em;
   padding: 6px 10px;
   // padding: 20px 40px;
   top: 26px;
@@ -230,7 +237,22 @@
   margin-left: 0em;
 
   @media screen and (min-width: $large) {
-      margin-left: 20em;
+      margin-left: 26em;
+      margin-top: 2.5em;
+
+      // .x-li:nth-child(2) {
+      //   margin-left: -7em;
+      // }
+      // .x-li:nth-child(3) {
+      //   margin-left: -5em;
+      // }
+      // .x-li:nth-child(4) {
+      //   margin-left: -5.5em;
+      // }
+      // .x-li:nth-child(5) {
+      //   margin-left: -2em;
+      // }
+
   }
 }
 

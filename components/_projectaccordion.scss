@@ -1,0 +1,92 @@
+.evo_c-projaccord {
+  padding-left: 0;
+  margin-left: 0;
+  width: 100%;
+  list-style: none;
+}
+.evo_c-projaccord__bellow {
+  margin-bottom: .5em;
+}
+.evo_c-projaccord__bellow:last-child {
+  margin-bottom: 0;
+}
+.evo_c-projaccord__title {
+  /*width: 100%;*/
+  padding: .9375em;
+  display: block;
+  background-color: #56c5de;
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  color: white;
+  transition: background .3s ease, color .3s ease;
+}
+.evo_c-projaccord__title:link, .evo_c-projaccord__title:visited, .evo_c-projaccord__title:active {
+  text-decoration: none;
+  color: white;
+}
+.evo_c-projaccord__title:hover {
+  background-color: #49a7bd;
+}
+.evo_c-projaccord__title.is-active {
+  background-color: #49a7bd;
+}
+@media (min-width: 361px) and (max-width: 600px) {
+  .evo_c-projaccord__title {
+    background-color: #78E36D;
+  }
+  .evo_c-projaccord__title:hover {
+    background-color: #40C257;
+  }
+  .evo_c-projaccord__title.is-active {
+    background-color: #40C257;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .evo_c-projaccord__title {
+    background-color: #939994;
+  }
+  .evo_c-projaccord__title:hover {
+    background-color: #737774;
+  }
+  .evo_c-projaccord__title.is-active {
+    background-color: #737774;
+  }
+}
+@media (min-width: 1025px) {
+  .evo_c-projaccord__title {
+    background-color: #D8474A;
+  }
+  .evo_c-projaccord__title:hover {
+    background-color: #B93E40;
+  }
+  .evo_c-projaccord__title.is-active {
+    background-color: #B93E40;
+  }
+}
+.evo_c-projaccord__content {
+  max-height: 0;
+  padding-left: .625em;
+  padding-right: .625em;
+  padding-bottom: .625em;
+  background: white;
+  font-family: "Helvetica", sans-serif;
+  overflow-y: scroll;
+  transition: all .5s ease;
+  opacity: 0;
+}
+.evo_c-projaccord__content.is-expanded {
+  max-height: 50vh;
+  padding-top: 1em;
+  background: #e6e9ed;
+  opacity: 1;
+}
+.evo_c-projaccord h3 {
+  color: limegreen;
+}
+.evo_c-accordion h5 {
+  color: plum;
+}
+
+.evo_c-projaccord ul {
+  list-style: none;
+}

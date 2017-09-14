@@ -179,13 +179,13 @@
   height: 8.5em;
 }
 .other-graph .bar-li:nth-child(3) {
-  height: 2em;
+  height: 6.5em;
 }
 .other-graph .bar-li:nth-child(4) {
   height: 3em;
 }
 .other-graph .bar-li:nth-child(5) {
-  height: 5.5em;
+  height: 2.7em;
 }
 
 /*  Tooltip Code */
@@ -238,6 +238,27 @@
   font-weight: 700;
   font-size: .75em;
   // margin-right: auto;
+  @media screen and (min-width: 450px) {
+    margin-left: 18%;
+  }
+  @media screen and (min-width: 550px) {
+    margin-left: 12%;
+  }
+  @media screen and (min-width: 701px) {
+    margin-left: 10%;
+  }
+  @media screen and (min-width: 801px) {
+    margin-left: 8%;
+  }
+  @media screen and (min-width: 901px) {
+    margin-left: 6%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 2%;
+  }
+  @media screen and (min-width: 1120px) {
+    margin-left: 0;
+  }
 }
 
 .other-skills-graph-container .x-axis {
@@ -276,37 +297,277 @@
 }
 .x-li:nth-child(1) {
   margin-left: 10%;
+  @media screen and (min-width: 550px) {
+    margin-left:12%
+  }
+  @media screen and (min-width: $large) {
+    // margin-left: 5%;
+  }
+  @media screen and (min-width: 801px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: $huge) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 11%;
+  }
 }
 .x-li:nth-child(2) {
   margin-left: 20%;
+  @media screen and (min-width: 550px) {
+    // margin-left: 1%
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 17%;
+  }
+  @media screen and (min-width: 801px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 16%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 15%;
+  }
 }
 .x-li:nth-child(3) {
   margin-left: 30%;
+  @media screen and (min-width: 550px) {
+    // margin-left:15%
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 24%;
+  }
+  @media screen and (min-width: 801px) {
+    margin-left: 22%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 21%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 20%;
+  }
 }
 .x-li:nth-child(4) {
   margin-left: 40%;
+  @media screen and (min-width: 550px) {
+    margin-left: 38%
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 29%;
+  }
+  @media screen and (min-width: 801px) {
+    margin-left: 27%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 26%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 24%;
+  }
 }
 .x-li:nth-child(5) {
   margin-left: 50%;
+  @media screen and (min-width: 550px) {
+    margin-left: 45%;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 32%;
+  }
+  @media screen and (min-width: 801px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 30%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 28%;
+  }
 }
 
 .other-skills-graph-container .x-li:nth-child(1) {
   margin-left: 5%;
+  @media screen and (min-width: 550px) {
+    margin-left: 14%;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 16%;
+  }
+  @media screen and (min-width: 701px) {
+    margin-left: 22%;
+  }
+  @media screen and (min-width: 801px) {
+    margin-left: 25%;
+  }
+  @media screen and (min-width: 901px) {
+    margin-left: 30%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 35%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 33%;
+  }
+  @media screen and (min-width: 1225px) {
+    margin-left: 32%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 31%;
+  }
 }
 .other-skills-graph-container .x-li:nth-child(2) {
   margin-left: 18%;
   margin-top: -1em;
+  @media screen and (min-width: 550px) {
+    margin-left: 25%;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 27%;
+  }
+  @media screen and (min-width: 701px) {
+    margin-left: 30%;
+  }
+  @media screen and (min-width: 801px) {
+    margin-left: 32%;
+  }
+  @media screen and (min-width: 901px) {
+    margin-left: 36%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 41%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 39%;
+  }
+  @media screen and (min-width: 1225px) {
+    margin-left: 38%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 36%;
+  }
 }
 .other-skills-graph-container .x-li:nth-child(3) {
   margin-left: 25%;
+  @media screen and (min-width: 550px) {
+    margin-left: 32%;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 33%;
+  }
+  @media screen and (min-width: 701px) {
+    margin-left: 36%;
+  }
+  @media screen and (min-width: 801px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 901px) {
+    margin-left: 40%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 45%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 43%;
+  }
+  @media screen and (min-width: 1225px) {
+    margin-left: 41%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 40%;
+  }
 }
 .other-skills-graph-container .x-li:nth-child(4) {
   margin-left: 40%;
   margin-top: -2.5em;
+  @media screen and (min-width: 550px) {
+    margin-left: 43%;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 44%;
+  }
+  @media screen and (min-width: 701px) {
+    margin-left: 45%;
+  }
+  @media screen and (min-width: 801px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 901px) {
+    margin-left: 48%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 52%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 48.5%;
+  }
+  @media screen and (min-width: 1225px) {
+    margin-left: 47%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 45%;
+  }
 }
 .other-skills-graph-container .x-li:nth-child(5) {
   margin-left: 48%;
   margin-top: -2em;
+  @media screen and (min-width: 550px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 50%;
+  }
+  @media screen and (min-width: 701px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 801px) {
+    margin-left: 49%;
+  }
+  @media screen and (min-width: 901px) {
+    margin-left: 52%;
+  }
+  @media screen and (min-width: $huge) {
+    margin-left: 55%;
+  }
+  @media screen and (min-width: 1120px) {
+    // margin-left: ;
+  }
+  @media screen and (min-width: 1180px) {
+    margin-left: 51.5%;
+  }
+  @media screen and (min-width: 1225px) {
+    margin-left: 50%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 48%;
+  }
 }
 
 .backend-graph-container .x-li {

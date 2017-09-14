@@ -1,0 +1,126 @@
+/**, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #888888;
+  background-image: linear-gradient(
+    #F0F0F0,
+    #FEFEFE);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}*/
+
+.calc_container {
+  margin: 5em auto 0;
+  padding: 20px;
+  max-width: 400px;
+  background-image: linear-gradient(
+    #9AD2E8,
+    #87CFE9);
+  border-radius: 3px;
+  border-spacing: 8px 8px;
+  box-shadow: 0 4px 0 0 #009EDF;
+}
+
+.button,
+#display {
+  display: table-cell;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  color: #888888;
+  font-size: .8rem;
+  outline: none;
+  transition: background-color .5s ease,
+        box-shadow .5s ease,
+        transform .5s ease;
+}
+
+#display {
+  height: 100%;
+  min-height: 55px;
+  font-size: 1rem;
+  padding: auto 5px;
+  background-color: #79A7B9;
+  box-shadow: inset 0 4px 0 #628795;
+  color: #fff;
+  /*direction: rtl;*/
+}
+#display:hover,
+#display:focus {
+  background-color: #85B7CD;
+}
+
+.button {
+  font-weight: 700;
+  padding: 20px 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 0 0 #75A7BA;
+}
+.button:hover,
+.button:focus {
+  background-color: #E3E3E3;
+}
+.button:active {
+  box-shadow: 0 0 0 0 #75A7BA;
+  transform: translateY(3px);
+}
+
+.sign {
+  background-color: #EEE2E7;
+}
+.sign:hover,
+.sign:focus {
+  background-color: #CFC3CA;
+}
+
+#clear {
+  background-color: #FF8475;
+  box-shadow: 0 4px 0 0 #C8655D;
+  color: #fff;
+}
+#clear:hover,
+#clear:focus {
+  background-color: #E9786C;
+}
+#clear:active {
+  box-shadow: 0 0 0 0 #C8655D;
+}
+
+#del {
+  background-color: #FFF085;
+  box-shadow: 0 4px 0 0 #B8AD60;
+}
+#del:hover,
+#del:focus {
+  background-color: #E4D777;
+}
+#del:active {
+  box-shadow: 0 0 0 0 #B8AD60;
+}
+
+#equal {
+  background-color: #90F182;
+  box-shadow: 0 4px 0 0 #6DBB64;
+}
+#equal:hover,
+#equal:focus {
+  background-color: #80DD76;
+}
+#equal:active {
+  box-shadow: 0 0 0 0 #6DBB64;
+}

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.min.css">
 </head>
 
@@ -100,7 +101,77 @@
                   <div class="proj-1-slide-4">
                     <label class="carousel-nav" for="proj-1-slide-3"><i class="material-icons">keyboard_arrow_left</i></label>
                       <div class="slide-content">
-                          <p>LIVE DEMO GOES HERE</p>
+                        <table class="calc_container">
+                          <tr>
+                            <td>
+                              <button class="button" id="clear">C</button>
+                            </td>
+                            <td colspan="3">
+                              <input type="text" id="display" maxlength="22">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class="button number" value="7">7</button>
+                            </td>
+                            <td>
+                              <button class="button number" value="8">8</button>
+                            </td>
+                            <td>
+                              <button class="button number" value="9">9</button>
+                            </td>
+                            <td>
+                              <button class="button sign" value="+">+</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class="button number" value="4">4</button>
+                            </td>
+                            <td>
+                              <button class="button number" value="5">5</button>
+                            </td>
+                            <td>
+                              <button class="button number" value="6">6</button>
+                            </td>
+                            <td>
+                              <button class="button sign" value="-">-</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <button class="button number" value="1">1</button>
+                            </td>
+                            <td>
+                              <button class="button number" value="2">2</button>
+                            </td>
+                            <td>
+                              <button class="button number" value="3">3</button>
+                            </td>
+                            <td>
+                              <button class="button sign" value="/">/</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <button class="button number" value="0">0</button>
+                            </td>
+                            <td>
+                              <button class="button number" value=".">.</button>
+                            </td>
+                            <td>
+                              <button class="button sign" value="*">x</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <button class="button" id="del">DEL</button>
+                            </td>
+                            <td colspan="2">
+                              <button class="button" id="equal">=</button>
+                            </td>
+                          </tr>
+                        </table>
                       </div>
                     <label class="carousel-nav" for="proj-1-slide-1"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -199,8 +270,63 @@
                   </div>
                   <div class="proj-3-slide-4">
                     <label class="carousel-nav" for="proj-3-slide-3"><i class="material-icons">keyboard_arrow_left</i></label>
-                      <div class="slide-content">
-                          <p>LIVE DEMO GOES HERE</p>
+                      <div class="projshopping slide-content">
+                            <header class="banner">
+      <span class="fa fa-globe"></span><p>Don't deliver a product.<br>  Deliver an experience.</p>
+  </header>
+  <section class="product_listings">
+
+    <div class="product"><img src="http://placehold.it/230x150/A9FF8B"><p class="product_title">Hope Divine</p><p class="product_price">$15.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/FFC2B4"><p class="product_title">Love Pure</p><p class="product_price">$17.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates    cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/FF5551"><p class="product_title">Anger Raging</p><p class="product_price">$15.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/A0B5CF"><p class="product_title">Sadness Eternal</p><p class="product_price">$9.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/660101"><p class="product_title">Pain Gnashing</p><p class="product_price">$11.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/FFFE42"><p class="product_title">Ecstasy Enchanting</p><p class="product_price">$22.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/6BFFE8"><p class="product_title">Interest Piquing</p><p class="product_price">$16.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/C290BB"><p class="product_title">Courage Unwavering</p><p class="product_price">$12.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/28C81E"><p class="product_title">Envy Greening</p><p class="product_price">$10.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus enderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/4683FF"><p class="product_title">Amazement Sheer</p><p class="product_price">$21.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/FF9F54"><p class="product_title">Anticipation Gush</p><p class="product_price">$18.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates  perspiciatis  cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt  saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+    <div class="product"><img src="http://placehold.it/230x150/C2B5DD"><p class="product_title">Remorse Filling</p><p class="product_price">$15.00</p><p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cupiditate perspiciatis necessitatibus cum quam, debitis, provident exercitationem facere at ratione fuga, nam. Omnis reprehenderit quas sed ex deserunt ipsam saepe.</p><button class="add_to_cart">Add To Cart</button></div>
+
+  </section>
+  <button id="toggle_cart">Toggle Cart</button>
+  <p class="promoCodes">Promo Codes To Try: HAPPY, 5OFF, RAGE</p>
+  <section class="secondary_section">
+    <div class="shopping_cart">
+      <div class="columns">
+        <span class="cart_column">Product Image</span>
+        <span class="cart_column">Product Title</span>
+        <span class="cart_column">Price</span>
+        <span class="cart_column">QTY</span>
+        <span class="cart_column">Subtotal</span>
+      </div>
+      <div class="cart_total_area">
+        <span class="cart_subtotal_label">Subtotal:</span><span class="cart_subtotal">$00.00</span><br>
+        <span class="cart_promocode_label">Promo Code:</span><input type="text" class="promo_code" maxlength="5"><button class="cart_promo_button">Apply</button><br>
+        <span class="cart_discount_label">Discount:</span><span class="cart_discount_value">NONE</span><br>
+        <span class="cart_total_label">Total:</span><span class="cart_total_value">$00.00</span><br>
+        <button class="cart_continuingshopping_button">Continue Shopping</button><button class="cart_checkout_button">Check Out</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footers">
+    <div class="foot1"><p>Foot1 ipsum dolor sit amet, consectetur adipisicing elit. Molestias fuga quae at, placeat cupiditate corrupti, fugit neque sapiente, itaque enim voluptatum cum molestiae est reprehenderit! Et commodi, molestiae nisi eum!</p></div>
+    <div class="foot2"><p>Foot2 ipsum dolor sit amet, consectetur adipisicing elit. Molestias fuga quae at, placeat cupiditate corrupti, fugit neque sapiente, itaque enim voluptatum cum molestiae est reprehenderit! Et commodi, molestiae nisi eum!</p></div>
+    <div class="foot3"><p>Foot3 ipsum dolor sit amet, consectetur adipisicing elit. Molestias fuga quae at, placeat cupiditate corrupti, fugit neque sapiente, itaque enim voluptatum cum molestiae est reprehenderit! Et commodi, molestiae nisi eum!</p></div>
+    <div class="foot4"><p>Foot4 ipsum dolor sit amet, consectetur adipisicing elit. Molestias fuga quae at, placeat cupiditate corrupti, fugit neque sapiente, itaque enim voluptatum cum molestiae est reprehenderit! Et commodi, molestiae nisi eum!</p></div>
+  </footer>
                       </div>
                     <label class="carousel-nav" for="proj-3-slide-1"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -243,7 +369,23 @@
                   <div class="proj-4-slide-4">
                     <label class="carousel-nav" for="proj-4-slide-3"><i class="material-icons">keyboard_arrow_left</i></label>
                       <div class="slide-content">
-                          <p>LIVE DEMO GOES HERE</p>
+                        <div class="projgallery">
+                          <!-- HTML Code for Images linked to the thumbnails -->
+                          <input type="radio" name="gallery" id="1" value="1">
+                          <input type="radio" name="gallery" id="2" value="2">
+                          <input type="radio" name="gallery" id="3" value="3">
+                          <input type="radio" name="gallery" id="4" value="4">
+                          <input type="radio" name="gallery" id="5" value="5">
+
+                          <!-- Thumbnails at the top -->
+                          <div class="thumbnail-box">
+                            <label for="1"><img class="thumbnail" src="img/gallery_imgs/house1_1x.jpg" alt="House"></label>
+                            <label for="2"><img class="thumbnail" src="img/gallery_imgs/house2_1x.jpg" alt="Staircase"></label>
+                            <label for="3"><img class="thumbnail" src="img/gallery_imgs/house3_1x.jpg" alt="Kitchen"></label>
+                            <label for="4"><img class="thumbnail" src="img/gallery_imgs/house4_1x.jpg" alt="Cedar House"></label>
+                            <label for="5"><img class="thumbnail" src="img/gallery_imgs/house5_1x.jpg" alt="Courtyard"></label>
+                          </div>
+                        </div>
                       </div>
                     <label class="carousel-nav" for="proj-4-slide-1"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -288,7 +430,55 @@
                   <div class="proj-5-slide-4">
                     <label class="carousel-nav" for="proj-5-slide-3"><i class="material-icons">keyboard_arrow_left</i></label>
                       <div class="slide-content">
-                          <p>LIVE DEMO GOES HERE</p>
+<!-- <div id="project-accordiong-wrapper"> -->
+                        <ul class="evo_c-projaccord">
+                          <li class="evo_c-projaccord__bellow">
+                            <a class="evo_c-projaccord__title js-c-accordion-target" href="#">Appetizers</a>
+                            <div class="evo_c-projaccord__content">
+                              <h3>Check Our Tasty Apps!</h3>
+                              <h5>Happy Our Menu - Half Off!</h5>
+                              <ul>
+                                <li>Chicken Wings (6) - $5.99</li>
+                                <li>Calamari - $7.99</li>
+                                <li>Garlic Bread Pickles- $4.59</li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="evo_c-projaccord__bellow">
+                            <a class="evo_c-projaccord__title js-c-accordion-target" href="#">Entrees</a>
+                            <div class="evo_c-projaccord__content">
+                              <h3>Choose From A Wide Range Of Pastas, Combos and Signature Dishes</h3>
+                              <h5>Pastas</h5>
+                              <ul>
+                                <li>Chicken Picatta - $14.99</li>
+                              </ul>
+
+                            </div>
+                          </li>
+                          <li class="evo_c-projaccord__bellow">
+                            <a class="evo_c-projaccord__title js-c-accordion-target" href="#">Desserts</a>
+                            <div class="evo_c-projaccord__content">
+                              <h3>New Summer Specials!</h3>
+                              <h5>Shakes and Ice Cream</h5>
+                              <ul>
+                                <li>Turtle Caramel Shake - $6.99</li>
+                                <li>Chocolate Brownie Bite - $4.99</li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="evo_c-projaccord__bellow">
+                            <a class="evo_c-projaccord__title js-c-accordion-target" href="#">Soups &amp; Salads</a>
+                            <div class="evo_c-projaccord__content">
+                              <h3>Try One Of Our Healthy Salads To Stay Fit!</h3>
+                              <h5>Traditional</h5>
+                              <ul>
+                                <li>Ceasar Salad - $8.99</li>
+                                <li>Spring Medley Mix - $4.99</li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- </div> -->
                       </div>
                     <label class="carousel-nav" for="proj-5-slide-1"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -367,11 +557,11 @@
                 <li class="y-li">Learning</li>
               </ul>
               <ul class="bars">
-                <li class="bar-li" data-tooltip="Something HEre"></li>
-                <li class="bar-li" data-tooltip="Something HEre"></li>
-                <li class="bar-li" data-tooltip="Something HEre"></li>
-                <li class="bar-li" data-tooltip="Something HEre"></li>
-                <li class="bar-li" data-tooltip="Something HEre"></li>
+                <li class="bar-li" data-tooltip="I have massive amounts of experience drafting blog posts, writing emails, preparing project proposals etc."></li>
+                <li class="bar-li" data-tooltip="I have implemented a number of programming and non-programming projects over the course of my career that have required problem solving skills in different contexts"></li>
+                <li class="bar-li" data-tooltip="I have managed a few web design/development projects working small business owners as a freelancer"></li>
+                <li class="bar-li" data-tooltip="My research experience is limited to the work I’ve done in university and the daily web research I do to solve various challenges I may encounter during the course of a project"></li>
+                <li class="bar-li" data-tooltip="I have limited public experience and have yet to talk at any conferences or meetups"></li>
               </ul>
             </div>
             <ul class="x-axis">
@@ -427,6 +617,8 @@
   <script src="responsiveaccordion.js"></script>
   <script src="simpleoffcanvasnav.js"></script>
   <script src="searchmodaltrigger.js"></script>
+  <script src="productlisting.js"></script>
+  <script src="calculator.js"></script>
   <!-- <script src="//localhost:35729/livereload.js"></script> -->
 </body>
 </html>

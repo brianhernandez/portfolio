@@ -212,8 +212,17 @@
                   </div>
                   <div class="proj-2-slide-2">
                     <label class="carousel-nav" for="proj-2-slide-1"><i class="material-icons">keyboard_arrow_left</i></label>
-                      <div class="slide-content">
-                        <img src="img/calculator.png" alt="Real Calculator">
+                      <div class="projforms slide-content">
+                        <img src="img/formscolorbuilder.png" alt="Color Builder Form">
+                        <img src="img/formscreditcard.png" alt="Credit Card Form">
+                        <img src="img/formslogin.png" alt="Login Form">
+                        <img src="img/formsquestionnaire.png" alt="Questionnaire Form">
+                        <img src="img/formsscheduling.png" alt="Scheduling Form">
+                        <img src="img/formssearch.png" alt="Search Form">
+                        <img src="img/formsshipping1.png" alt="Shipping Form 1">
+                        <img src="img/formsshipping2.png" alt="Shipping Form 2">
+                        <img src="img/formssignup1.png" alt="Signup Form 1">
+                        <img src="img/formssignup2.png" alt="Singup Form 2">
                       </div>
                     <label class="carousel-nav" for="proj-2-slide-3"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -227,8 +236,18 @@
                   </div>
                   <div class="proj-2-slide-4">
                     <label class="carousel-nav" for="proj-2-slide-3"><i class="material-icons">keyboard_arrow_left</i></label>
-                      <div class="slide-content">
-                          <p>LIVE DEMO GOES HERE</p>
+                      <div class="projcolor slide-content">
+                          <div class="color_picker">
+                            <form action="colorbuilder.html" method="post" id="colorbuilder">
+                              <label for="red_value">Red </label><input type="range" id="red_value" min="0" max="255" step="5"><br>
+                              <label for="green_value">Green </label><input type="range" id="green_value" min="0" max="255" step="5"><br>
+                              <label for="blue_value">Blue </label><input type="range" id="blue_value" min="0" max="255" step="5"><br>
+                              <label for="alpha_value">Alpha </label><input type="range" id="alpha_value" min="0" max="1" step=".01"><br>
+                              <p class="rgba_value">rgba(128,128,128,0.5)</p>
+                              <input type="text" id="color_swatch">
+                              </div>
+                              <button type="submit">Submit</button>
+                            </form>
                       </div>
                     <label class="carousel-nav" for="proj-2-slide-1"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -410,7 +429,7 @@
                   </div>
                   <div class="proj-5-slide-2">
                     <label class="carousel-nav" for="proj-5-slide-1"><i class="material-icons">keyboard_arrow_left</i></label>
-                      <div class="slide-content">
+                      <div class="projaccord slide-content">
                         <img src="img/accordion1.png" alt="Accordion Image 1">
                         <img src="img/accordion2.png" alt="Accordion Image 2">
                         <img src="img/accordion3.png" alt="Accordion Image 3">
@@ -430,7 +449,6 @@
                   <div class="proj-5-slide-4">
                     <label class="carousel-nav" for="proj-5-slide-3"><i class="material-icons">keyboard_arrow_left</i></label>
                       <div class="slide-content">
-<!-- <div id="project-accordiong-wrapper"> -->
                         <ul class="evo_c-projaccord">
                           <li class="evo_c-projaccord__bellow">
                             <a class="evo_c-projaccord__title js-c-accordion-target" href="#">Appetizers</a>
@@ -452,7 +470,6 @@
                               <ul>
                                 <li>Chicken Picatta - $14.99</li>
                               </ul>
-
                             </div>
                           </li>
                           <li class="evo_c-projaccord__bellow">
@@ -478,7 +495,7 @@
                             </div>
                           </li>
                         </ul>
-                        <!-- </div> -->
+
                       </div>
                     <label class="carousel-nav" for="proj-5-slide-1"><i class="material-icons">keyboard_arrow_right</i></label>
                   </div>
@@ -619,6 +636,8 @@
   <script src="searchmodaltrigger.js"></script>
   <script src="productlisting.js"></script>
   <script src="calculator.js"></script>
+  <script src="validator.js"></script>
+  <script src="color-validate.js"></script>
   <!-- <script src="//localhost:35729/livereload.js"></script> -->
 </body>
 </html>

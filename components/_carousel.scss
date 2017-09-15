@@ -5,7 +5,7 @@
   // z-index: -200;
 }
 
-.carousel input {
+.carousel input[id|="proj"] {
   display: none;
   // visibility: hidden;
 }
@@ -161,7 +161,7 @@ div[class|="proj"] {
   // top: 50%;
   transition: color .3s ease;
   // z-index: 100;
-  align-self: stretch;
+  align-self: flex-start;
   // @media screen and (min-width: $large) {
     // top: 75%
   // }
@@ -176,6 +176,11 @@ div[class|="proj"] {
   // position: absolute;
   // display: inline-block;
   // max-width: 90%;
+}
+.carousel .projforms img,
+.carousel .projaccord img {
+  display: block;
+  margin: 1em auto;
 }
 
 .carousel .carousel-nav:hover,

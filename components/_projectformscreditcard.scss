@@ -41,12 +41,17 @@ h1 {
   border: 5px solid rgba(0,0,0,0.2);
   padding: 30px 10px 30px;
   margin: 0 auto 50px;
-  width: 600px;
+  max-width: 600px;
 }
 
 .projcredit p {
   width: 85%;
   margin: 0 auto 30px;
+}
+
+.creditmonthyearcsv {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .projcredit .name,
@@ -70,24 +75,27 @@ h1 {
 .projcredit .year,
 .projcredit .csv {
   display: inline-block;
-  padding: 15px;
+  padding: 8px;
+
+  max-width: 33%;
+  margin-bottom: 10px;
+  @media screen and (min-width: $large) {
+    padding: 15px;
+  }
 }
 .projcredit .month,
-.projcredit .year {
+.projcredit .year,
+.projcredit .csv {
+  width: 124px;
   width: 124px;
 }
 
 .projcredit .month {
-  margin-left: 85px;
-  margin-right: 10px;
+  /*margin-left: 85px;*/
+  /*margin-right: 10px;*/
 }
 .projcredit .year {
-  margin-right: 11px;
-}
-
-.projcredit .csv {
-  padding: 15px;
-  width: 124px;
+  /*margin-right: 11px;*/
 }
 
 .projcredit label {
@@ -95,42 +103,60 @@ h1 {
   font-size: .9rem;
   margin-bottom: 5px;
 }
+@media screen and (min-width: $huge) {
 
-.projcredit label[for="exp_month"]:after,
-.projcredit label[for="exp_year"]:after,
-.projcredit label[for="card_number"]:after,
-.projcredit label[for="name_on_card"]:after,
-.projcredit label[for="csv"]:after {
-  font-family: 'FontAwesome';
-  position: relative;
-  color: #4E5252;
-}
 
-.projcredit label[for="name_on_card"]:after {
-  content: '\f007';
-  right: -250px;
-  top: 33px;
-}
+  .projcredit label[for="exp_month"]:after,
+  .projcredit label[for="exp_year"]:after,
+  .projcredit label[for="card_number"]:after,
+  .projcredit label[for="name_on_card"]:after,
+  .projcredit label[for="csv"]:after {
+    font-family: 'FontAwesome';
+    position: relative;
+    color: #4E5252;
+  }
 
-.projcredit label[for="card_number"]:after {
-  content: '\f283';
-  right: -165px;
-  top: 33px;
-}
+  .projcredit label[for="name_on_card"]:after {
+    content: '\f007';
+    right: -200px;
+    top: 33px;
+    @media screen and (min-width: 1120px) {
 
-.projcredit label[for="exp_month"]:after,
-.projcredit label[for="exp_year"]:after {
-  content: '\f07d';
-  right: -10px;
-  top: 33px;
-}
-.projcredit label[for="exp_year"]:after {
-  right: -25px;
-}
-.projcredit label[for="csv"]:after {
-  content: '\f023';
-  right: -45px;
-  top: 33px;
+    }
+  }
+
+  .projcredit label[for="card_number"]:after {
+    content: '\f283';
+    right: -85px;
+    top: 33px;
+    @media screen and (min-width: 1120px) {
+
+    }
+  }
+
+  .projcredit label[for="exp_month"]:after,
+  .projcredit label[for="exp_year"]:after {
+    content: '\f07d';
+    right: 5px;
+    top: 33px;
+    @media screen and (min-width: 1120px) {
+
+    }
+  }
+  .projcredit label[for="exp_year"]:after {
+    right: -3px;
+    @media screen and (min-width: 1120px) {
+
+    }
+  }
+  .projcredit label[for="csv"]:after {
+    content: '\f023';
+    right: -20px;
+    top: 33px;
+    @media screen and (min-width: 1120px) {
+
+    }
+  }
 }
 
 .projcredit input,

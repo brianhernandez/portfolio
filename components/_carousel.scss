@@ -218,4 +218,8 @@ div[class|="proj"] {
 .projcolor,
 .projcredit {
   margin: 1em auto;
+
+  @media screen and (min-width: $large) {
+    margin: 1em auto;
+  }
 }

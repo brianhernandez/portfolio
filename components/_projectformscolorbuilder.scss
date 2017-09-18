@@ -83,11 +83,15 @@ h1 {
 
 .projcolor button {
   display: block;
-  margin: 2rem auto;
+  margin: 0 auto;
   background-color: lightgray;
   border-radius: 5px;
   padding: 8px;
   transition: background-color .3s ease;
+
+  @media screen and (min-width: $large) {
+    margin: 2rem auto;
+  }
 }
 
 .projcolor button:hover,

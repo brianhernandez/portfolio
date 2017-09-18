@@ -1389,6 +1389,12 @@ div[class|="proj"] {
 .projcredit {
   margin: 1em auto;
 }
+@media screen and (min-width: 601px) {
+  .projcolor,
+  .projcredit {
+    margin: 1em auto;
+  }
+}
 
 /* MODAL
   ================================ */
@@ -1796,7 +1802,7 @@ h1 {
 }
 @media screen and (min-width: 450px) {
   .calc_container {
-    padding: 1.25em;
+    padding: .9em;
   }
 }
 
@@ -1830,9 +1836,19 @@ h1 {
 
 .button {
   font-weight: 700;
-  padding: 1.25em 1.875em;
+  padding: .9em 1em;
   background-color: #fff;
   box-shadow: 0 4px 0 0 #75A7BA;
+}
+@media screen and (min-width: 601px) {
+  .button {
+    padding: 1em 1.5em;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .button {
+    padding: 1.25em 1.875em;
+  }
 }
 
 .button:hover,
@@ -1989,11 +2005,16 @@ h1 {
 
 .projcolor button {
   display: block;
-  margin: 2rem auto;
+  margin: 0 auto;
   background-color: lightgray;
   border-radius: 5px;
   padding: 8px;
   transition: background-color .3s ease;
+}
+@media screen and (min-width: 601px) {
+  .projcolor button {
+    margin: 2rem auto;
+  }
 }
 
 .projcolor button:hover,
@@ -2712,12 +2733,17 @@ h1 {
   border: 5px solid rgba(0, 0, 0, 0.2);
   padding: 30px 10px 30px;
   margin: 0 auto 50px;
-  width: 600px;
+  max-width: 600px;
 }
 
 .projcredit p {
   width: 85%;
   margin: 0 auto 30px;
+}
+
+.creditmonthyearcsv {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .projcredit .name,
@@ -2741,26 +2767,32 @@ h1 {
 .projcredit .year,
 .projcredit .csv {
   display: inline-block;
-  padding: 15px;
+  padding: 8px;
+  max-width: 33%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 601px) {
+  .projcredit .month,
+  .projcredit .year,
+  .projcredit .csv {
+    padding: 15px;
+  }
 }
 
 .projcredit .month,
-.projcredit .year {
+.projcredit .year,
+.projcredit .csv {
+  width: 124px;
   width: 124px;
 }
 
 .projcredit .month {
-  margin-left: 85px;
-  margin-right: 10px;
+  /*margin-left: 85px;*/
+  /*margin-right: 10px;*/
 }
 
 .projcredit .year {
-  margin-right: 11px;
-}
-
-.projcredit .csv {
-  padding: 15px;
-  width: 124px;
+  /*margin-right: 11px;*/
 }
 
 .projcredit label {
@@ -2769,45 +2801,42 @@ h1 {
   margin-bottom: 5px;
 }
 
-.projcredit label[for="exp_month"]:after,
-.projcredit label[for="exp_year"]:after,
-.projcredit label[for="card_number"]:after,
-.projcredit label[for="name_on_card"]:after,
-.projcredit label[for="csv"]:after {
-  font-family: 'FontAwesome';
-  position: relative;
-  color: #4E5252;
-}
+@media screen and (min-width: 1025px) {
+  .projcredit label[for="exp_month"]:after,
+  .projcredit label[for="exp_year"]:after,
+  .projcredit label[for="card_number"]:after,
+  .projcredit label[for="name_on_card"]:after,
+  .projcredit label[for="csv"]:after {
+    font-family: 'FontAwesome';
+    position: relative;
+    color: #4E5252;
+  }
 
-.projcredit label[for="name_on_card"]:after {
-  content: '\f007';
-  right: -250px;
-  top: 33px;
+  .projcredit label[for="name_on_card"]:after {
+    content: '\f007';
+    right: -200px;
+    top: 33px;
+  }
+  .projcredit label[for="card_number"]:after {
+    content: '\f283';
+    right: -85px;
+    top: 33px;
+  }
+  .projcredit label[for="exp_month"]:after,
+  .projcredit label[for="exp_year"]:after {
+    content: '\f07d';
+    right: 5px;
+    top: 33px;
+  }
+  .projcredit label[for="exp_year"]:after {
+    right: -3px;
+  }
+  .projcredit label[for="csv"]:after {
+    content: '\f023';
+    right: -20px;
+    top: 33px;
+  }
 }
-
-.projcredit label[for="card_number"]:after {
-  content: '\f283';
-  right: -165px;
-  top: 33px;
-}
-
-.projcredit label[for="exp_month"]:after,
-.projcredit label[for="exp_year"]:after {
-  content: '\f07d';
-  right: -10px;
-  top: 33px;
-}
-
-.projcredit label[for="exp_year"]:after {
-  right: -25px;
-}
-
-.projcredit label[for="csv"]:after {
-  content: '\f023';
-  right: -45px;
-  top: 33px;
-}
-
 .projcredit input,
 .projcredit select,
 .projcredit button {
@@ -2880,40 +2909,6 @@ h1 {
   height: auto;
   margin-bottom: 1em;
   border-radius: 50%;
-  position: relative;
-  display: block;
-  line-height: 50px;
-  background-color: #40b87c;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  margin: 30px auto 20px;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-align: center;
-  color: #ffffff;
-  transition: background 0.2s linear,box-shadow 0.2s linear;
-}
-
-.about-wrapper img:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  border-radius: 100px;
-  animation: a 2s infinite;
-}
-
-.about-wrapper img:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  border-radius: 100px;
-  animation: a 2s infinite;
 }
 
 .about-wrapper p {

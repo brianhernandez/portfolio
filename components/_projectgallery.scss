@@ -1,20 +1,22 @@
+/* PROJECTS: GALLERY
+  ================================ */
+
 .projgallery .thumbnail-box {
+  align-content: flex-start;
+  align-items: flex-start;
+  background-position: center top;
+  background-size: auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-
-  width: 100%;
   height: 95vh;
-  background-size: auto;
-  background-position: center top;
+  justify-content: center;
   transition: background .7s ease;
+  width: 100%;
 }
 
 .projgallery .thumbnail {
-  border: 2px solid gray;
   border-radius: 2px;
+  border: 2px solid gray;
   transition: border .7s ease;
 }
 
@@ -31,29 +33,29 @@
     background: url("img/gallery_imgs/gallery_1x.jpg") no-repeat center top;
   }
   .projgallery input[value="1"]:checked ~ div{
-    background: url("img/gallery_imgs/house1_1x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house1_1x.jpg") no-repeat center top;
   }
   .projgallery input[value="2"]:checked ~ div{
-    background: url("img/gallery_imgs/house2_1x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house2_1x.jpg") no-repeat center top;
   }
   .projgallery input[value="3"]:checked ~ div{
-    background: url("img/gallery_imgs/house3_1x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house3_1x.jpg") no-repeat center top;
   }
   .projgallery input[value="4"]:checked ~ div{
-    background: url("img/gallery_imgs/house4_1x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house4_1x.jpg") no-repeat center top;
   }
   .projgallery input[value="5"]:checked ~ div{
-    background: url("img/gallery_imgs/house5_1x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house5_1x.jpg") no-repeat center top;
   }
 }
 
@@ -65,29 +67,29 @@
     background: url("img/gallery_imgs/gallery_2x.jpg") no-repeat center top;
   }
   .projgallery input[value="1"]:checked ~ div{
-    background: url("img/gallery_imgs/house1_2x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house1_2x.jpg") no-repeat center top;
   }
   .projgallery input[value="2"]:checked ~ div{
-    background: url("img/gallery_imgs/house2_2x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house2_2x.jpg") no-repeat center top;
   }
   .projgallery input[value="3"]:checked ~ div{
-    background: url("img/gallery_imgs/house3_2x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house3_2x.jpg") no-repeat center top;
   }
   .projgallery input[value="4"]:checked ~ div{
-    background: url("img/gallery_imgs/house4_2x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house4_2x.jpg") no-repeat center top;
   }
   .projgallery input[value="5"]:checked ~ div{
-    background: url("img/gallery_imgs/house5_2x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house5_2x.jpg") no-repeat center top;
   }
 }
 
@@ -99,33 +101,32 @@
     background: url("img/gallery_imgs/gallery_4x.jpg") no-repeat center top;
   }
   .projgallery input[value="1"]:checked ~ div{
-    background: url("img/gallery_imgs/house1_4x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house1_4x.jpg") no-repeat center top;
   }
   .projgallery input[value="2"]:checked ~ div{
-    background: url("img/gallery_imgs/house2_4x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house2_4x.jpg") no-repeat center top;
   }
   .projgallery input[value="3"]:checked ~ div{
-    background: url("img/gallery_imgs/house3_4x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house3_4x.jpg") no-repeat center top;
   }
   .projgallery input[value="4"]:checked ~ div{
-    background: url("img/gallery_imgs/house4_4x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house4_4x.jpg") no-repeat center top;
   }
   .projgallery input[value="5"]:checked ~ div{
-    background: url("img/gallery_imgs/house5_4x.jpg") no-repeat center top;
     /*background-size: 100%;*/
     background-size: auto;
+    background: url("img/gallery_imgs/house5_4x.jpg") no-repeat center top;
   }
 }
 
 .projgallery input {
   display: none;
 }
-

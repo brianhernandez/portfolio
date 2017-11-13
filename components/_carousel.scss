@@ -6,22 +6,22 @@
 }
 
 .carousel input[id|="proj"] {
-  display: none;
   // visibility: hidden;
+  display: none;
 }
 
 div[class|="proj"] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-  width: 100%;
-  // overflow-y: scroll;
   // display: none;
+  // overflow-y: scroll;
+  align-content: center;
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   justify-content: space-between;
-  align-content: center;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
 }
 
 
@@ -30,14 +30,14 @@ div[class|="proj"] {
 .evo_c-accordion__content.is-expanded .carousel .proj-3-slide-1,
 .evo_c-accordion__content.is-expanded .carousel .proj-4-slide-1,
 .evo_c-accordion__content.is-expanded .carousel .proj-5-slide-1 {
-//   // display: block;
-//   position: relative;
-//   // top:0;
-//   // left:0;
+  // display: initial;
   opacity: 1;
   pointer-events: initial;
   transition: opacity .3s ease;
-  // display: initial;
+//   // display: block;
+//   // left:0;
+//   // top:0;
+//   position: relative;
 }
 
 // .proj-1-slide-2,
@@ -69,13 +69,13 @@ div[class|="proj"] {
 .evo_c-accordion__content.is-expanded #proj-5-slide-2:checked ~ .proj-5-slide-2,
 .evo_c-accordion__content.is-expanded #proj-5-slide-3:checked ~ .proj-5-slide-3,
 .evo_c-accordion__content.is-expanded #proj-5-slide-4:checked ~ .proj-5-slide-4 {
-//   // display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
   opacity: 1;
   pointer-events: initial;
   transition: opacity .3s ease;
+//   // display: block;
+//   left: 0;
+//   position: absolute;
+//   top: 0;
 }
 /* For each project, when one slide is activate, ensure all other slides of that carousel
    is deactive by bringing its opacity back to 0*/
@@ -151,17 +151,17 @@ div[class|="proj"] {
 
 
 .carousel .carousel-nav {
-//   display: inline-block;
   // position: absolute;
-//   background: initial;
-//   box-shadow: none;
-//   padding: 10px;
-//   position: relative;
-//   bottom: 0;
   // top: 50%;
-  transition: color .3s ease;
   // z-index: 100;
   align-self: flex-start;
+  transition: color .3s ease;
+//   background: initial;
+//   bottom: 0;
+//   box-shadow: none;
+//   display: inline-block;
+//   padding: 10px;
+//   position: relative;
   // @media screen and (min-width: $large) {
     // top: 75%
   // }
@@ -173,9 +173,9 @@ div[class|="proj"] {
   font-size: 3em;
 }
 .carousel .slide-content {
-  // position: absolute;
   // display: inline-block;
   // max-width: 90%;
+  // position: absolute;
 }
 .carousel .projforms img,
 .carousel .projaccord img {
@@ -185,29 +185,29 @@ div[class|="proj"] {
 
 .carousel .carousel-nav:hover,
 .carousel .carousel-nav:focus {
-  color: #339EFF;
-  cursor: pointer;
-  cursor: hand;
   // background-color: initial;
+  color: #339EFF;
+  cursor: hand;
+  cursor: pointer;
 }
 
 .project-links {
-  font-size: 1.5em;
-  font-weight: 700;
-  text-decoration: inherit;
-  border-bottom: 3px solid transparent;
   // margin-left: auto;
   // margin-right: auto;
-  margin-bottom: .7em;
+  border-bottom: 3px solid transparent;
   display: inline-block;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: .7em;
+  text-decoration: inherit;
   transform: border .3s ease,
               color .3s ease;
 }
 
 .project-links:focus,
 .project-links:hover {
-  color: #339EFF;
   border-bottom: 3px solid #339EFF;
+  color: #339EFF;
 }
 
 .project-heading {

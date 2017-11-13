@@ -1,56 +1,58 @@
+/* BUSINESS CARD
+  ================================ */
 .businessCardWrap {
-    -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
-    -o-perspective: 1000px;
-    perspective: 1000px;
-    -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
+    -o-perspective: 1000px;
     -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    display: block;
-    width: 300px;
-    height: 200px;
-    // position: absolute;
-    // left: 50%;
-    // top: 50%;
-    // -webkit-transform: translate(-50%, -50%);
+    -webkit-perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
     // -moz-transform: translate(-50%, -50%);
     // -o-transform: translate(-50%, -50%);
+    // -webkit-transform: translate(-50%, -50%);
+    // left: 50%;
+    // position: absolute;
+    // top: 50%;
     // transform: translate(-50%, -50%);
     cursor: pointer;
+    display: block;
+    height: 200px;
     margin: 2.5em auto;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    width: 300px;
 }
 
 .card {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: all 600ms;
     -moz-transition: all 600ms;
+    -o-transform-style: preserve-3d;
     -o-transition: all 600ms;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
     transition: all 600ms;
+    width: 100%;
     z-index: 20;
 }
 
     .card div {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        /* padding: 10px; */
-        /* background: #FFF; */
-        text-align: left;
-        font-family: 'Open Sans', sans-serif;
-        color: white;
-        /* line-height: 200px; */
-        -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         -o-backface-visibility: hidden;
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        /* background: #FFF; */
         /* border-radius: 2px; */
+        /* line-height: 200px; */
+        /* padding: 10px; */
+        backface-visibility: hidden;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        height: 100%;
+        position: absolute;
+        text-align: left;
+        width: 100%;
     }
     .front {
       background: url("https://user-images.githubusercontent.com/1489880/28473503-dd2a20dc-6e12-11e7-8e95-5f22f902ee5c.png") top no-repeat black;
@@ -61,8 +63,8 @@
     }
     .businessCardIcon {
       position: absolute;
-      top: 5px;
       right: 5px;
+      top: 5px;
     }
     .back .businessCardIcon {
       color: black;
@@ -77,15 +79,15 @@
       margin-left: 10px;
     }
     .name {
-      margin-top: 10px;
-      margin-bottom: 0;
       font-size: 24px;
       font-weight: 100;
+      margin-bottom: 0;
+      margin-top: 10px;
     }
     .title {
-      margin-top: 0;
-      margin-bottom: 15px;
       font-size: 12px;
+      margin-bottom: 15px;
+      margin-top: 0;
     }
     .description,
     .email,
@@ -94,8 +96,8 @@
       font-size: 10px;
      }
     .description {
-      margin-top: 0;
       margin-right: 10px;
+      margin-top: 0;
     }
     .encyclopedia,
     .encyclopedia-logo,
@@ -124,20 +126,20 @@
     }
 
     .card .back {
-        /* background: #222; */
-        color: #FFF;
-        -webkit-transform: rotateX(180deg);
         -moz-transform: rotateX(180deg);
         -o-transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        /* background: #222; */
+        color: #FFF;
         transform: rotateX(180deg);
     }
 
 .businessCardWrap:hover .card {
-    -webkit-transform: rotateX(20deg);
     -moz-transform: rotateX(20deg);
     -o-transform: rotateX(20deg);
-    transform: rotateX(20deg);
+    -webkit-transform: rotateX(20deg);
     box-shadow: 0 20px 20px rgba(50,50,50,.2);
+    transform: rotateX(20deg);
 }
 
 .businessCardInput {
@@ -145,16 +147,16 @@
 }
 
 :checked + .card {
-    -webkit-transform: rotateX(180deg);
     -moz-transform: rotateX(180deg);
     -o-transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
 
 .businessCardWrap:hover :checked + .card {
-    -webkit-transform: rotateX(160deg);
     -moz-transform: rotateX(160deg);
     -o-transform: rotateX(160deg);
-    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
     box-shadow: 0 20px 20px rgba(255,255,255,.2);
+    transform: rotateX(160deg);
 }

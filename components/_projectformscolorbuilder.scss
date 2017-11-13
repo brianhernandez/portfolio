@@ -1,17 +1,5 @@
-/**, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Oxygen', sans-serif;
-  font-size: 1.2em;
-}
-
-h1 {
-  text-align: center;
-}*/
+/* PROJECTS: COLOR BUILDER FORM
+  ================================ */
 
 .projcolor {
   width: 100%;
@@ -22,26 +10,26 @@ h1 {
 }
 
 .projcolor.color_picker {
-  /*max-width: 500px;*/
-  padding: 20px;
-  background-color: rgba(255,255,255,.0);
-  margin: 0 auto;
-  position: relative;
-  /*width: 50%;*/
-  background-color: white;
+  -moz-box-shadow: 0 8px 6px -6px black;
   -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-    border: 2px solid #999999;
-    border-radius: 10px;
+  /*max-width: 500px;*/
+  /*width: 50%;*/
+  background-color: rgba(255,255,255,.0);
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #999999;
+  box-shadow: 0 8px 6px -6px black;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
 }
 
 .projcolor label {
   display: inline-block;
-  width: 100px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
   font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
 .projcolor label[for="red_value"] { color: #FF452B; }
@@ -57,35 +45,34 @@ h1 {
 }
 
 .projcolor .rgba_value {
-  margin: 0;
-  text-align: right;
-  letter-spacing: 1px;
-  font-size: .9em;
-  position: absolute;
   bottom: 0;
+  font-size: .9em;
   left: calc(50% - 77px);
-
+  letter-spacing: 1px;
+  margin: 0;
+  position: absolute;
+  text-align: right;
 }
 
 .projcolor #color_swatch {
-  background-color: rgba(128,128,128,0.5);
-  /*width: 215px;*/
-  width: 50%;
-  height: 100%;
-  border: none;
-  position: absolute;
-  top: 0;
-  right: 0;
   /*These should be 3 pixels less than container border radius*/
-  border-top-right-radius: 7px;
+  /*width: 215px;*/
+  background-color: rgba(128,128,128,0.5);
   border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  border: none;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
 }
 
 .projcolor button {
-  display: block;
-  margin: 0 auto;
   background-color: lightgray;
   border-radius: 5px;
+  display: block;
+  margin: 0 auto;
   padding: 8px;
   transition: background-color .3s ease;
 
@@ -97,5 +84,4 @@ h1 {
 .projcolor button:hover,
 .projcolor button:focus {
   background-color: #C4CDCB;
-
 }

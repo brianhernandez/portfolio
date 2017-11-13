@@ -21,11 +21,11 @@ $su_11of12: percentage(11/12);
 }
 
 .su_cell {
-  padding: 0.5em;
-  margin-bottom: 1em;
-  word-wrap: break-word;
-  width: 100%;
   box-sizing: border-box;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 @media screen and (min-width: $large) {
@@ -159,28 +159,27 @@ $su_11of12: percentage(11/12);
 .su_container {
 
   @media screen and (min-width: $large) {
-    max-width: 960px;
     margin: 0 auto;
+    max-width: 960px;
   }
   @media screen and (min-width: $huge) {
     max-width: 1025px;
   }
-
 }
 
 .su_demo_hackhaton {
-  padding: 2em;
   background-color: #fff;
+  padding: 2em;
 }
 
 .su_demo .su_cell {
-  border: 1px solid #72c024;
   border-radius: 4px;
+  border: 1px solid #72c024;
 }
 
 .su_demo .su_cell.su_accent-bg-light {
-  border: 1px solid #da137f;
   border-radius: 4px;
+  border: 1px solid #da137f;
 }
 /*
 * END GRID COMPONENT

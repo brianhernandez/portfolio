@@ -1,8 +1,11 @@
+/* PROJECTS: ACCORDION
+  ================================ */
+
 .evo_c-projaccord {
-  padding-left: 0;
-  margin-left: 0;
-  width: 100%;
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
 }
 .evo_c-projaccord__bellow {
   margin-bottom: .5em;
@@ -12,17 +15,17 @@
 }
 .evo_c-projaccord__title {
   /*width: 100%;*/
-  padding: .9375em;
-  display: block;
   background-color: #56c5de;
-  text-decoration: none;
-  font-family: "Helvetica", sans-serif;
   color: white;
+  display: block;
+  font-family: "Helvetica", sans-serif;
+  padding: .9375em;
+  text-decoration: none;
   transition: background .3s ease, color .3s ease;
 }
 .evo_c-projaccord__title:link, .evo_c-projaccord__title:visited, .evo_c-projaccord__title:active {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 .evo_c-projaccord__title:hover {
   background-color: #49a7bd;
@@ -64,21 +67,21 @@
   }
 }
 .evo_c-projaccord__content {
-  max-height: 0;
-  padding-left: .625em;
-  padding-right: .625em;
-  padding-bottom: .625em;
   background: white;
   font-family: "Helvetica", sans-serif;
-  overflow-y: scroll;
-  transition: all .5s ease;
+  max-height: 0;
   opacity: 0;
+  overflow-y: scroll;
+  padding-bottom: .625em;
+  padding-left: .625em;
+  padding-right: .625em;
+  transition: all .5s ease;
 }
 .evo_c-projaccord__content.is-expanded {
-  max-height: 50vh;
-  padding-top: 1em;
   background: #e6e9ed;
+  max-height: 50vh;
   opacity: 1;
+  padding-top: 1em;
 }
 .evo_c-projaccord h3 {
   color: limegreen;

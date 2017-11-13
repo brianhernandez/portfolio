@@ -1,4 +1,4 @@
-/* ABOUT
+/* ABOUT LAYOUT
   ================================ */
 
 .content-about {
@@ -6,9 +6,9 @@
 }
 
 .about-wrapper {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: center;
 
   @media screen and (min-width: 932px) {
@@ -26,18 +26,18 @@
 }
 
 .about-wrapper img {
-  width: 100%;
-  max-width: 450px;
-  // max-height: 450px;
-  height: auto;
-  margin-bottom: 1em;
-  // max-width: 300px;
-  border-radius: 50%;
   // display: inline-block;
   // margin-bottom: 1em;
+  // max-height: 450px;
+  // max-width: 300px;
+  border-radius: 50%;
+  height: auto;
+  margin-bottom: 1em;
+  max-width: 450px;
+  width: 100%;
 }
 
 .about-wrapper p {
-  margin-bottom: .6em;
   // display: inline-block;
+  margin-bottom: .6em;
 }

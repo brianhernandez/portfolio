@@ -11,7 +11,7 @@ function generateRandomNumber() {
 }
 
 function sendNumbersAPIRequest() {
-  const NUMBERSAPISITE = 'http://numbersapi.com/';
+  const NUMBERSAPISITE = 'https://numbersapi.com/';
   let xhr = new XMLHttpRequest(),
       urlRequest = NUMBERSAPISITE + generateRandomNumber();
 

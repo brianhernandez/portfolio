@@ -41,3 +41,50 @@
   // display: inline-block;
   margin-bottom: .6em;
 }
+
+/* Numbers API Styles
+  ================================ */
+
+.numbers-api-container {
+  max-width: 600px;
+  margin: 1em auto 1em;
+  padding: 10px;
+  text-align: center;
+
+  .numbers-api-button {
+    margin: 1em auto 1em;
+    box-shadow: 0px 2px 4px 0px rgba(140,140,140,1);
+    padding: 20px 30px;
+    background: $small-nav-color;
+    transition: box-shadow .3s ease;
+
+    &:hover {
+      background: lighten($small-nav-color, 10%);
+    }
+
+    &:active {
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    }
+
+    @media screen and (min-width: $medium) {
+      background: $medium-nav-color;
+      &:hover {
+        background: lighten($medium-nav-color, 10%);
+      }
+    }
+
+    @media screen and (min-width: $large) {
+      background: $large-nav-color;
+      &:hover {
+        background: lighten($large-nav-color, 10%);
+      }
+    }
+
+    @media screen and (min-width: $huge) {
+      background: $huge-nav-color;
+      &:hover {
+        background: lighten($huge-nav-color, 10%);
+      }
+    }
+  }
+}

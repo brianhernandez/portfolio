@@ -15,7 +15,6 @@ function greetTheVisitor() {
   renderMessage(message);
 
   function renderMessage(message) {
-    console.log('renderMessage entered');
     let numbersAPIDiv = document.querySelector('.numbers-api-container'),
         mainContentDiv = document.querySelector('.main-content')
     let messageDiv = document.createElement('div');

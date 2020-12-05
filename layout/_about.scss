@@ -39,7 +39,7 @@
 
 .about-wrapper p {
   // display: inline-block;
-  margin-bottom: .6em;
+  margin-bottom: 0.6em;
 }
 
 /* Numbers API Styles
@@ -53,17 +53,18 @@
 
   .numbers-api-button {
     margin: 1em auto 1em;
-    box-shadow: 0px 2px 4px 0px rgba(140,140,140,1);
+    box-shadow: 0px 2px 4px 0px rgba(140, 140, 140, 1);
     padding: 20px 30px;
     background: $small-nav-color;
-    transition: box-shadow .3s ease;
+    background: $new-color-variable;
+    transition: box-shadow 0.3s ease;
 
     &:hover {
       background: lighten($small-nav-color, 10%);
     }
 
     &:active {
-      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     }
 
     @media screen and (min-width: $medium) {
